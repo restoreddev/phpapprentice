@@ -10,6 +10,7 @@ return [
     'pages' => [
         Page::create('index', 'index.phtml'),
         Page::create('credits', 'credits.phtml'),
+        Page::create('404', '404.phtml'),
         Page::create('basics', null, 'basics.php', [
             'title' => 'Basics',
             'subtitle' => 'Getting started',
