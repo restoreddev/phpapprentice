@@ -9,7 +9,6 @@ class BuildTest extends BaseTestCase
     public function setUp()
     {
         load_config(__DIR__ . '/static/config.php');
-        mkdir('/tmp/apprentice_output');
     }
 
     public function tearDown()
@@ -53,5 +52,7 @@ class BuildTest extends BaseTestCase
 
         $this->assertEquals($expectedHtml, $html);
         $this->assertEquals($expectedHtml2, $html2);
+        $this->assertTrue(file_exists('/tmp/apprentice_output/test.txt'));
+        $this->assertTrue(file_exists('/tmp/apprentice_output/TEST'));
     }
 }

@@ -7,6 +7,7 @@ return [
     'code_dir' => __DIR__ . '/code',
     'templates_dir' => __DIR__ . '/assets/templates',
     'output_dir' => __DIR__ . '/.build',
+    'files_dir' => __DIR__ . '/assets/files',
     'pages' => [
         Page::create('index', 'index.phtml'),
         Page::create('credits', 'credits.phtml'),
