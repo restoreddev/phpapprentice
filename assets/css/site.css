@@ -56,6 +56,9 @@ button {
 button:hover {
     color: $primary-color-dark;
 }
+button:focus {
+    outline: 0;
+}
 button .icon {
     vertical-align: middle;
 }
@@ -124,7 +127,7 @@ button:hover .icon svg {
 .grid-toc {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column-gap: 3em;
+    grid-column-gap: 1em;
 }
 .navigate-links {
     margin: 1em 0;
