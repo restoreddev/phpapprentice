@@ -76,6 +76,10 @@ class Build
         }
         $output = $this->getOutput($template, $page->variables);
 
+        if (!file_exists(config('output_dir'))) {
+            mkdir(config('output_dir'));
+        }
+
         file_put_contents(config('output_dir') . '/' . $page->name . '.html', $output);
 
         return $output;
