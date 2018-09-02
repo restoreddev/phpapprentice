@@ -3,12 +3,31 @@ language: php
 php:
   - '7.1'
 
+branches:
+  only:
+    - master
+
 cache:
   directories:
     - $HOME/.composer/cache
+    - $HOME/.npm
+
+before_install:
+  - nvm install 8
 
 install:
   - composer update --prefer-dist --no-interaction --prefer-stable --no-suggest
+  - npm update
 
 script:
+  - php apprentice build
+  - npm run prod
   - vendor/bin/phpunit
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: .build
+  target-branch: gh-pages
+  on:
+    branch: master
