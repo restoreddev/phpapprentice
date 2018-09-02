@@ -77,6 +77,13 @@ return [
             'subtitle' => 'Object-oriented programming',
             'description' => '',
             'previous' => 'functions',
+            'next' => 'classes-visibility',
+        ]),
+        Page::create('classes-visibility', null, 'classes-visibility.php', [
+            'title' => 'Classes Visibility',
+            'subtitle' => 'Privatizing your objects',
+            'description' => '',
+            'previous' => 'classes',
             'next' => '',
         ]),
     ],
