@@ -1,7 +1,14 @@
 language: php
+
 php:
   - '7.1'
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
 install:
-  - composer install --prefer-dist --no-interaction --prefer-stable --no-suggest
+  - composer update --prefer-dist --no-interaction --prefer-stable --no-suggest
+
 script:
   - vendor/bin/phpunit
