@@ -29,5 +29,6 @@ deploy:
   skip-cleanup: true
   local-dir: .build
   target-branch: gh-pages
+  github-token: $GITHUB_TOKEN
   on:
     branch: master
