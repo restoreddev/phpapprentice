@@ -1,5 +1,5 @@
 {
-    "name": "restoreddev/php-apprentice",
+    "name": "restoreddev/phpapprentice",
     "description": "A site for learning PHP",
     "require": {
         "php": "^7.1.3",

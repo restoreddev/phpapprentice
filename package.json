@@ -1,5 +1,5 @@
 {
-  "name": "php-apprentice",
+  "name": "phpapprentice",
   "version": "1.0.0",
   "description": "A website for learning PHP",
   "directories": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/restoreddev/php-apprentice.git"
+    "url": "git+https://github.com/restoreddev/phpapprentice.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/restoreddev/php-apprentice/issues"
+    "url": "https://github.com/restoreddev/phpapprentice/issues"
   },
-  "homepage": "https://github.com/restoreddev/php-apprentice#readme",
+  "homepage": "https://github.com/restoreddev/phpapprentice#readme",
   "devDependencies": {
     "@symfony/webpack-encore": "^0.20.1",
     "autoprefixer": "^8.6.5",
