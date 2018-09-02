@@ -1,0 +1,41 @@
+<?php partial('header', ['title' => $title, 'description' => $description]) ?>
+
+<div class="menu">
+    <button class="menu-button" title="Open Menu">
+        <div class="icon"><?= icon('menu') ?></div>
+        Menu
+    </button>
+</div>
+
+<div class="container center">
+    <h1><?= escape($title) ?></h1>
+    <h3 class="subtitle"><?= escape($subtitle) ?></h3>
+    <?= code_table($code) ?>
+
+    <div class="clearfix"></div>
+    <div class="navigate-links">
+        <?php if (!empty($previous)): ?>
+            <a href="<?= page_path($previous) ?>" title="Previous">
+                <div class="icon"><?= icon('cheveron-outline-left') ?></div>
+                Previous
+            </a>
+        <?php endif ?>
+        <?php if (!empty($next)): ?>
+            <a href="<?= page_path($next) ?>" title="Next">
+                Next
+                <div class="icon"><?= icon('cheveron-outline-right') ?></div>
+            </a>
+        <?php endif ?>
+    </div>
+</div>
+
+<div class="modal closed">
+    <div class="modal-content">
+        <button class="modal-button right" title="Close">
+            <div class="icon"><?= icon('close-outline') ?></div>
+        </button>
+        <?php partial('table_of_contents') ?>
+    </div>
+</div>
+
+<?php partial('footer') ?>

@@ -1,0 +1,35 @@
+{
+  "name": "php-apprentice",
+  "version": "1.0.0",
+  "description": "A website for learning PHP",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/encore dev",
+    "watch": "./node_modules/.bin/encore dev --watch",
+    "prod": "./node_modules/.bin/encore production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restoreddev/php-apprentice.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/restoreddev/php-apprentice/issues"
+  },
+  "homepage": "https://github.com/restoreddev/php-apprentice#readme",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.20.1",
+    "autoprefixer": "^8.6.5",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.5",
+    "postcss-simple-vars": "^4.1.0"
+  },
+  "dependencies": {
+    "babel-plugin-prismjs": "^1.0.2",
+    "prismjs": "^1.15.0"
+  }
+}
