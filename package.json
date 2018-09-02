@@ -2,9 +2,6 @@
   "name": "phpapprentice",
   "version": "1.0.0",
   "description": "A website for learning PHP",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/encore dev",

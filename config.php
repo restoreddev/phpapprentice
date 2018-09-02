@@ -6,7 +6,7 @@ return [
     'icon_dir' => __DIR__ . '/assets/icons',
     'code_dir' => __DIR__ . '/code',
     'templates_dir' => __DIR__ . '/assets/templates',
-    'output_dir' => __DIR__ . '/docs',
+    'output_dir' => __DIR__ . '/.build',
     'pages' => [
         Page::create('index', 'index.phtml'),
         Page::create('credits', 'credits.phtml'),

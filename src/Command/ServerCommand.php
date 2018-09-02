@@ -18,6 +18,6 @@ class ServerCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $output->writeln('Starting development server on localhost:8080');
-        system('php -S localhost:8080 -t docs src/util/router.php');
+        system('php -S localhost:8080 -t ' . config('output_dir') . ' src/util/router.php');
     }
 }
