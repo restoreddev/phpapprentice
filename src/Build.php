@@ -15,7 +15,9 @@ class Build
      */
     public function buildAll(): void
     {
-        $this->cleanPublicFolder();
+        $this->createOutputFolder();
+        $this->cleanOutputFolder();
+        $this->copyFiles();
 
         $pages = config('pages');
         foreach ($pages as $page) {
@@ -31,6 +33,8 @@ class Build
      */
     public function runSingleBuild(string $name): string
     {
+        $this->createOutputFolder();
+
         $pages = config('pages');
 
         foreach ($pages as $page) {
@@ -47,11 +51,38 @@ class Build
      *
      * @return void
      */
-    private function cleanPublicFolder(): void
+    private function cleanOutputFolder(): void
     {
         $files = glob(config('output_dir') . '/*.html');
         foreach ($files as $file) {
             unlink($file);
+        }
+    }
+
+    private function copyFiles(): void
+    {
+        $filesDir = config('files_dir');
+        if (!file_exists($filesDir)) {
+            return;
+        }
+
+        $outputDir = config('output_dir');
+        foreach (glob($filesDir . '/*') as $file) {
+            $name = basename($file);
+
+            copy($file, $outputDir . '/' . $name);
+        }
+    }
+
+    /**
+     * Creates output folder if it does not exist
+     *
+     * @return void
+     */
+    private function createOutputFolder(): void
+    {
+        if (!file_exists(config('output_dir'))) {
+            mkdir(config('output_dir'));
         }
     }
 
@@ -75,10 +106,6 @@ class Build
             $template = config('templates_dir') . '/default.phtml';
         }
         $output = $this->getOutput($template, $page->variables);
-
-        if (!file_exists(config('output_dir'))) {
-            mkdir(config('output_dir'));
-        }
 
         file_put_contents(config('output_dir') . '/' . $page->name . '.html', $output);
 
