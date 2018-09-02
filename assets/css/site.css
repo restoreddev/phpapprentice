@@ -56,6 +56,9 @@ button {
 button:hover {
     color: $primary-color-dark;
 }
+button:focus {
+    outline: 0;
+}
 button .icon {
     vertical-align: middle;
 }
@@ -124,7 +127,7 @@ button:hover .icon svg {
 .grid-toc {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column-gap: 3em;
+    grid-column-gap: 1em;
 }
 .navigate-links {
     margin: 1em 0;
@@ -214,4 +217,23 @@ button:hover .icon svg {
 @keyframes animateleft {
     from {left: -300px; opacity: 0}
     to {left: 0; opacity: 1}
+}
+.logo-404 {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.logo-404 svg {
+    max-width: 200px;
+    max-height: 200px;
+}
+.toc-404 {
+    max-width: 250px;
+    margin: 0 auto;
+}
+.message-404 {
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
 }
