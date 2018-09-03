@@ -96,6 +96,10 @@ class Build
     private function buildPage(Page $page): string
     {
         if (!empty($page->code)) {
+            if (!file_exists(config('code_dir') . '/' . $page->code)) {
+                throw new \Exception('Code file not found: ' . $page->code);
+            }
+
             $code = file_get_contents(config('code_dir') . '/' . $page->code);
             $page->variables['code'] = $code;
         }

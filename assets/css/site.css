@@ -28,6 +28,11 @@ a:hover {
     text-decoration: underline;
     color: $primary-color-dark;
 }
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #EEE;
+}
 p {
     max-width: 40em;
     line-height: 1.5;
