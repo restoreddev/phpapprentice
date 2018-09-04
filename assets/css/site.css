@@ -209,12 +209,13 @@ button:hover .icon svg {
     position: relative;
     padding: 1em;
     background-color: $white;
-    max-width: 15em;
+    max-width: 20em;
     height: 100%;
     animation-name: animateleft;
     animation-duration: .4s;
     overflow: scroll;
     box-shadow: 0 0 10px 0 $drop-shadow;
+    box-sizing: border-box;
 }
 .closed {
     display: none;
