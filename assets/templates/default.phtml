@@ -1,13 +1,13 @@
 <?php partial('header', ['title' => $title, 'subtitle' => $subtitle]) ?>
 
-<div class="menu">
-    <button class="menu-button" title="Open Menu">
-        <div class="icon"><?= icon('menu') ?></div>
-        Menu
-    </button>
-</div>
-
 <div class="container center">
+    <div class="menu">
+        <button class="menu-button" title="Open Menu">
+            <div class="icon"><?= icon('menu') ?></div>
+            Menu
+        </button>
+    </div>
+
     <h1><?= escape($title) ?></h1>
     <h3 class="subtitle"><?= escape($subtitle) ?></h3>
     <?= code_table($code) ?>
