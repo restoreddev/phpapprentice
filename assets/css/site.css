@@ -96,7 +96,7 @@ button:hover .icon svg {
     clear: both;
 }
 .container {
-    width: 90%;
+    width: 1050px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -186,8 +186,7 @@ button:hover .icon svg {
     height: 100px;
 }
 .menu {
-    margin-left: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 .modal {
     position: fixed;
