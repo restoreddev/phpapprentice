@@ -87,6 +87,12 @@ return [
             'title' => 'Classes: Constructor',
             'subtitle' => 'Construct your objects',
             'previous' => 'classes-visibility',
+            'next' => 'static',
+        ]),
+        Page::create('static', null, 'static.php', [
+            'title' => 'Static',
+            'subtitle' => 'Adding properties and functions to the blueprint',
+            'previous' => 'classes-constructor',
             'next' => '',
         ]),
     ],
