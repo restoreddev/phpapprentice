@@ -45,8 +45,8 @@ $skyscraper = new Skyscraper();
 echo $skyscraper->color . "\n";
 
 // Often, you will see static constructors in PHP.
-// A static constructor creates a new instance of an object. Why would do that when you just use "new Class" to create
-// a new object? The most common reason is to make the code more readable.
+// A static constructor creates a new instance of an object. Why would do that when you can just use "new Class" to create
+// the object? The most common reason is to make the code more readable.
 class TinyHouse
 {
     private $color;
@@ -66,5 +66,5 @@ class TinyHouse
     }
 }
 
-// Using "build" can make more sense than "new", but it is ultimately a personal choice.
+// Using "build" can make more sense than "new", but it is ultimately a personal preference.
 $house = TinyHouse::build('Blue', 4, true);

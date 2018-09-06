@@ -43,6 +43,7 @@ class Tricycle
     }
 }
 
+// You can execute a method on an object using the same "->" arrow characters.
 $bike = new Tricycle();
 $bike->color = 'Red';
 $bike->echoColor();
