@@ -35,7 +35,7 @@ class Phone2
 
 // The "protected" and "private" keywords work a little differently.
 // They both prevent functions and properties from being accessed outside an object.
-// However, a method or property marked "protected" can still be accessed by a child object.
+// However, a method or property marked "protected" can still be accessed by a child class.
 class Phone3
 {
     private $number;
@@ -49,7 +49,7 @@ class Phone3
 }
 
 // In class "Smartphone", the "caller" property is accessible because the parent class
-// has it marked as "protected". However, "Smartphone" cannot access the the "number" property
+// has it marked as "protected". However, "Smartphone" cannot access the "number" property
 // because it is still listed as private.
 class Smartphone extends Phone3
 {

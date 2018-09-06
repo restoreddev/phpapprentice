@@ -27,12 +27,18 @@ return [
             'title' => 'Arithmetic',
             'subtitle' => 'Doing math like a pro',
             'previous' => 'variables',
+            'next' => 'strings',
+        ]),
+        Page::create('strings', null, 'strings.php', [
+            'title' => 'Strings',
+            'subtitle' => 'Working with text',
+            'previous' => 'arithmetic',
             'next' => 'comparisons',
         ]),
         Page::create('comparisons', null, 'comparisons.php', [
             'title' => 'Comparisons',
             'subtitle' => 'Equality checking',
-            'previous' => 'arithmetic',
+            'previous' => 'strings',
             'next' => 'boolean-logic',
         ]),
         Page::create('boolean-logic', null, 'boolean-logic.php', [
@@ -87,6 +93,12 @@ return [
             'title' => 'Classes: Constructor',
             'subtitle' => 'Construct your objects',
             'previous' => 'classes-visibility',
+            'next' => 'static',
+        ]),
+        Page::create('static', null, 'static.php', [
+            'title' => 'Static',
+            'subtitle' => 'Adding properties and functions to the blueprint',
+            'previous' => 'classes-constructor',
             'next' => '',
         ]),
     ],

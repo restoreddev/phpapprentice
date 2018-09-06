@@ -8,18 +8,16 @@ echo "Hello World!\n";
 // There is a lot going on in this statement so let's work through it.
 
 // First, the echo keyword tells PHP to output some text.
-echo 'I am some text';
+echo "I am some text\n";
 
 // Second, PHP stores text in strings.
 
 // To write a string, you surround letters with single or double quotes.
-// The difference between single quoted strings and double quoted strings
-// is that double quoted strings can hold special characters like \n which tells PHP to start a new line.
-'I am a string';
+// Double quoted strings can hold special characters like \n which tells PHP to start a new line.
 "\nI am a string on a new line";
 
 // Third, all lines of code in PHP must end in a semi-colon.
 echo "No semi-colon is a no-no\n";
 
 // Using semi-colons means we can write multiple statements on one line.
-echo 'Hello'; echo " World\n";
+echo "Hello"; echo " World\n";

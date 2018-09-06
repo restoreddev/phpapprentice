@@ -27,7 +27,7 @@ class Tractor extends Vehicle
     }
 }
 
-// Outputs "driving slowly..." instead of "driving...".
+// The drive function now outputs "driving slowly..." instead of "driving...".
 $tractor = new Tractor();
 $tractor->drive();
 
