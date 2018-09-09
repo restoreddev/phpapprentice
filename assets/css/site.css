@@ -37,6 +37,9 @@ p {
     max-width: 40em;
     line-height: 1.5;
 }
+ol {
+    padding-left: 1em;
+}
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
@@ -116,6 +119,13 @@ button:hover .icon svg {
 .description {
     max-width: 25em;
 }
+.list-plain {
+    list-style: none;
+    padding-left: 0;
+}
+.body-ol li {
+    padding: 0.5em 0;
+}
 .grid-code {
     display: grid;
     grid-template-columns: 400px 1fr;
@@ -153,7 +163,6 @@ button:hover .icon svg {
 }
 .table-of-contents ol {
     margin: 1em 0;
-    padding-left: 1em;
 }
 .table-of-contents .section-title {
     font-weight: bold;
