@@ -3,7 +3,18 @@
 use Apprentice\Page;
 
 return [
+    /*
+     *
+     * Directory for SVG icons that can be used in templates
+     *
+     */
     'icon_dir' => __DIR__ . '/assets/icons',
+
+    /*
+     *
+     * Directory holding code files used in examples
+     *
+     */
     'code_dir' => __DIR__ . '/code',
     'templates_dir' => __DIR__ . '/assets/templates',
     'output_dir' => __DIR__ . '/.build',

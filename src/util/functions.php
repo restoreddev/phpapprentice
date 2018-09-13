@@ -147,3 +147,24 @@ function config(string $key) {
 
     return $config[$key] ?? null;
 }
+
+/**
+ * Returns path to asset based on manifes.json file
+ *
+ * @param  string $name
+ * @return string
+ */
+function asset(string $name): string {
+    $outputDir = config('output_dir');
+
+    if (file_exists($outputDir . '/manifest.json')) {
+        $text = file_get_contents($outputDir . '/manifest.json');
+        $paths = json_decode($text, true);
+
+        if (isset($paths[$name])) {
+            return $paths[$name];
+        }
+    }
+
+    return '/' . $name;
+}

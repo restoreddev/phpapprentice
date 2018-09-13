@@ -11,7 +11,8 @@ Encore
             "languages": ["php"],
             "css": false,
         }]);
-    });
+    })
+    .enableVersioning();
 ;
 
 module.exports = Encore.getWebpackConfig();
