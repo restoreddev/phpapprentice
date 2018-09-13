@@ -16,9 +16,33 @@ return [
      *
      */
     'code_dir' => __DIR__ . '/code',
+
+    /*
+     *
+     * Directory to PHP templates used by pages
+     *
+     */
     'templates_dir' => __DIR__ . '/assets/templates',
+
+    /*
+     *
+     * Output directory for html files and assets
+     *
+     */
     'output_dir' => __DIR__ . '/.build',
+
+    /*
+     *
+     * Static files that should be loaded into output directory
+     *
+     */
     'files_dir' => __DIR__ . '/assets/files',
+
+    /*
+     *
+     * Configuration for all pages on the site
+     *
+     */
     'pages' => [
         Page::create('index', 'index.phtml'),
         Page::create('installing-php', 'installing-php.phtml'),
