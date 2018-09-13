@@ -20,8 +20,8 @@ install:
   - npm update
 
 script:
-  - php apprentice build
   - npm run prod
+  - php apprentice build
   - vendor/bin/phpunit
 
 deploy:
