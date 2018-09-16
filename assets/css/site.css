@@ -112,6 +112,7 @@ button:hover .icon svg {
 }
 .doc {
     padding: 0.5em 0;
+    line-height: 1.2;
 }
 .subtitle {
     margin-top: 0;
