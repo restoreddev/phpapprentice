@@ -135,6 +135,12 @@ return [
             'title' => 'Static',
             'subtitle' => 'Class properties and methods',
             'previous' => 'classes-constructor',
+            'next' => 'interfaces',
+        ]),
+        Page::create('interfaces', null, 'interfaces.php', [
+            'title' => 'Interfaces',
+            'subtitle' => 'Writing code contracts',
+            'previous' => 'static',
             'next' => '',
         ]),
     ],
