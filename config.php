@@ -141,6 +141,12 @@ return [
             'title' => 'Interfaces',
             'subtitle' => 'Writing code contracts',
             'previous' => 'static',
+            'next' => 'abstract',
+        ]),
+        Page::create('abstract', null, 'abstract.php', [
+            'title' => 'Abstract Classes',
+            'subtitle' => 'Inheriting an interface',
+            'previous' => 'interfaces',
             'next' => '',
         ]),
     ],
