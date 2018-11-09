@@ -146,7 +146,13 @@ return [
         Page::create('abstract', null, 'abstract.php', [
             'title' => 'Abstract Classes',
             'subtitle' => 'Inheriting an interface',
-            'previous' => 'interfaces',
+            'previous' => 'interface',
+            'next' => 'exceptions',
+        ]),
+        Page::create('exceptions', null, 'exceptions.php', [
+            'title' => 'Exceptions',
+            'subtitle' => 'Throwing errors',
+            'previous' => 'abstract',
             'next' => '',
         ]),
     ],
