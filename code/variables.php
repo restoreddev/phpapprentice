@@ -19,7 +19,7 @@ $var = 'I am a new variable';
 // An int is a number without a decimal place.
 // A float is a number with a decimal place.
 // A boolean can be two values: true or false.
-// Last, there is a string, a collection of characters.
+// Last, there is a string: a collection of characters.
 $int = 1;
 $float = 100.10;
 $bool = true;
