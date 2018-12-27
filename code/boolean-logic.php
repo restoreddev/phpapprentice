@@ -14,7 +14,7 @@ $a && $b;
 $a && $c;
 
 // Using two pipe characters checks if either value is true.
-// Then, it will return true. If both values are false, the PHP
+// Then, it will return true. If both values are false, then PHP
 // returns false.
 $a = true;
 $b = false;
