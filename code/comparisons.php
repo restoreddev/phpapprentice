@@ -2,7 +2,7 @@
 
 // A boolean is a value that is always 0 or 1, yes or no, on or off.
 // In PHP, a boolean is represented by the words true and false.
-// While programming, you will often want to know if something is true or false.
+// While programming, you will often want to know if something is positive or negative.
 $a = true;
 $b = false;
 
@@ -35,7 +35,13 @@ $one >= $two;
 // by using three equal signs.
 
 // This returns true.
+1 == 1;
 1 == '1';
+1 == true;
+1 == 1.0;
+1 === 1;
 
 // This returns false.
 1 === '1';
+1 === true;
+1 === 1.0;

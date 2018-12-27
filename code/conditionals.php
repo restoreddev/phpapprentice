@@ -62,7 +62,7 @@ switch ($drink) {
 $language = 'english';
 echo $language == 'spanish' ? "hola\n" : "hello\n";
 
-// Lastly, there is another form of a ternary that checks if a value is set and then returns the value to the right of two question marks if value is null.
+// Lastly, there is another form of a ternary that checks if a value is set and then returns the value to the right of the two question marks if the value is null.
 echo $IDoNotExist ?? "Variable not set\n";
 
 // You can also chain multiple checks in a row.
