@@ -1,6 +1,8 @@
 <?php
 
+// In PHP, arrays are used to store a list of items in a single variable.
 // There are two ways to create an array.
+
 // First, you can use the array construct to pass in values separated by commas
 // and it will return an array.
 $taskList = array('grocery store', 'change car oil');

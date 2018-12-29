@@ -20,7 +20,7 @@ $processor = new Processor();
 $processor->charge('1234');
 
 // A developer who wants to prevent an exception from stopping code execution
-// can catch the exception and use it for logging or a return an error to a user.
+// can catch the exception and use it for logging or display the error to a user.
 
 // Just wrap the code that might throw an exception with the keyword "try" and brackets
 // followed by "catch", the exception type in parentheses and more brackets.
