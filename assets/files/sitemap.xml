@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://phpapprentice.com/</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/installing-php.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/basics.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/variables.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/arithmetic.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/strings.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/comparisons.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/boolean-logic.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/conditionals.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/loops.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/arrays.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/functions.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/classes.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/classes-inheritance.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/classes-visibility.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/classes-constructor.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/static.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/interfaces.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/abstract.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/exceptions.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://phpapprentice.com/credits.html</loc>
+  <lastmod>2018-12-27T01:20:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

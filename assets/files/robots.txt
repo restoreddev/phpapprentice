@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://phpapprentice.com/sitemap.xml
