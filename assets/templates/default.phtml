@@ -1,6 +1,6 @@
 <?php partial('header', ['title' => $title, 'subtitle' => $subtitle]) ?>
 
-<div class="container center">
+<div class="container small center">
     <div class="menu">
         <button class="menu-button" title="Open Menu">
             <div class="icon"><?= icon('menu') ?></div>
@@ -10,7 +10,7 @@
 
     <h1><?= escape($title) ?></h1>
     <h3 class="subtitle"><?= escape($subtitle) ?></h3>
-    <?= code_table($code) ?>
+    <?= $chapter ?>
 
     <div class="clearfix"></div>
     <div class="navigate-links">

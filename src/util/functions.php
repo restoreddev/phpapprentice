@@ -62,65 +62,6 @@ function icon(string $name): string {
 }
 
 /**
- * Takes string of PHP code and converts it into html for display
- *
- * @param  string $code
- * @return string
- */
-function code_table(string $code): string {
-    $tokens = token_get_all($code);
-    $output = '<div class="grid-code">' .
-                '<div class="doc"></div>' .
-                '<div class="code">' .
-                    '<pre>' .
-                        '<code class="language-php">';
-
-    $previousTokenWasComment = false;
-    foreach ($tokens as $token) {
-        if (is_string($token)) {
-            $output .= $token;
-            continue;
-        }
-
-        $id = $token[0];
-        $text = $token[1];
-
-        if ($id == T_COMMENT || $id == T_DOC_COMMENT) {
-            $text = htmlspecialchars(trim(str_replace('/', '', $text)));
-
-            if ($previousTokenWasComment) {
-                $output .= ' ' . $text;
-            } else {
-                $output .= '</code>' .
-                        '</pre>' .
-                    '</div>' .
-                    '<div class="doc">' .
-                        $text;
-            }
-
-            $previousTokenWasComment = true;
-        } else {
-            if ($previousTokenWasComment) {
-                $output .= '</div>' .
-                            '<div class="code">' .
-                                '<pre>' .
-                                    '<code class="language-php">';
-            }
-
-            $output .= htmlspecialchars($text);
-            $previousTokenWasComment = false;
-        }
-    }
-
-    $output .= '</code>' .
-           '</pre>' .
-        '</div>' .
-    '</div>';
-
-    return $output;
-}
-
-/**
  * Loads config file into a global
  *
  * @param  string $path

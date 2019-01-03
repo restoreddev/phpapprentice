@@ -1,35 +1,45 @@
 <?php partial('header', ['title' => 'PHP Apprentice']) ?>
 
-<div class="container center">
-    <div class="grid-toc">
-        <div>
-            <div class="home-title-wrapper">
-                <div class="home-logo"><?= icon('elephant') ?></div>
-                <h1 class="home-title">PHP Apprentice</h1>
-                <h3 class="home-subtitle">A site for learning how to use PHP</h3>
-            </div>
-            <p>
-                The goal of PHP Apprentice is to be an easy to understand resource for learning how to write good code in the PHP programming language. There are a lot of PHP tutorials on the internet that use outdated libraries, insecure programming practices or inefficient code. I want this site to show how to write PHP code with quality.
-            </p>
-            <p>
-                The site currently has content for learning the basics of PHP. In the future, more pages will be added for more advanced topics like building websites, database integration and security.
-            </p>
-            <p>
-                PHP Apprentice is currently a work in progress. If you would like to contribute or request a certain discussion topic, check out the <a href="https://github.com/restoreddev/phpapprentice" target="_blank">GitHub repository</a>.
-            </p>
-            <p>
-                To get started, you will need to <a href="<?php echo page_path('installing-php') ?>">install</a> PHP, have a text editor and open your terminal.
-                Each example in PHP Apprentice can by typed into a PHP file and executed in the terminal.
-                Let's get started! 😃
-            </p>
-            <a href="<?= page_path('basics') ?>" class="button">
-                <div class="icon"><?= icon('book-reference') ?></div>
-                Open First Chapter
-            </a>
+<div class="container small center">
+    <div class="menu">
+        <button class="menu-button" title="Open Menu">
+            <div class="icon"><?= icon('menu') ?></div>
+            Menu
+        </button>
+    </div>
+    <div>
+        <div class="home-title-wrapper">
+            <div class="home-logo"><?= icon('elephant') ?></div>
+            <h1 class="home-title">PHP Apprentice</h1>
+            <h3 class="home-subtitle">A site for learning how to use PHP</h3>
         </div>
-        <div>
-            <?php partial('table_of_contents') ?>
-        </div>
+        <p>
+            The goal of PHP Apprentice is to be an easy to understand resource for learning how to write good code in the PHP programming language. There are a lot of PHP tutorials on the internet that use outdated libraries, insecure programming practices or inefficient code. I want this site to show how to write PHP code with quality.
+        </p>
+        <p>
+            The site currently has content for learning the basics of PHP. In the future, more pages will be added for more advanced topics like building websites, database integration and security.
+        </p>
+        <p>
+            PHP Apprentice is currently a work in progress. If you would like to contribute or request a certain discussion topic, check out the <a href="https://github.com/restoreddev/phpapprentice" target="_blank">GitHub repository</a>.
+        </p>
+        <p>
+            To get started, you will need to <a href="<?php echo page_path('installing-php') ?>">install</a> PHP, have a text editor and open your terminal.
+            Each example in PHP Apprentice can by typed into a PHP file and executed in the terminal.
+            Let's get started! 😃
+        </p>
+        <a href="<?= page_path('basics') ?>" class="button">
+            <div class="icon"><?= icon('book-reference') ?></div>
+            Open First Chapter
+        </a>
+    </div>
+</div>
+
+<div class="modal closed">
+    <div class="modal-content">
+        <button class="modal-button right" title="Close">
+            <div class="icon"><?= icon('close-outline') ?></div>
+        </button>
+        <?php partial('table_of_contents') ?>
     </div>
 </div>
 
