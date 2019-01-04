@@ -50,17 +50,6 @@ class FunctionsTest extends BaseTestCase
         $this->assertEquals("<test></test>\n", $icon);
     }
 
-    public function test_code_table()
-    {
-        $php = file_get_contents(__DIR__ . '/static/code_table.php');
-        $expectedOutput = file_get_contents(__DIR__ . '/static/code_table.html');
-
-        $html = code_table($php);
-
-        $this->assertFalse(empty($html));
-        $this->assertEquals($expectedOutput, $html . "\n");
-    }
-
     public function test_partial()
     {
         partial('partial', ['test' => 'test var']);

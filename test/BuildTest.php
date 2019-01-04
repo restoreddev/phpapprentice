@@ -30,7 +30,9 @@ class BuildTest extends BaseTestCase
         $html = file_get_contents('/tmp/apprentice_output/test.html');
         $expectedHtml = "<div>Test Title</div>\n" .
             "<div>Test Subtitle</div>\n" .
-            "<div>Test Description</div>\n";
+            "<div>Test Description</div>\n" .
+            "<div>&lt;p&gt;Test comment&lt;/p&gt;\n" .
+            "&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;\$test = &#039;test&#039;;&lt;/code&gt;&lt;/pre&gt;</div>\n";
 
         $this->assertFalse(empty($html));
         $this->assertEquals($expectedHtml, $html);
@@ -44,7 +46,9 @@ class BuildTest extends BaseTestCase
 
         $expectedHtml = "<div>Test Title</div>\n" .
             "<div>Test Subtitle</div>\n" .
-            "<div>Test Description</div>\n";
+            "<div>Test Description</div>\n" .
+            "<div>&lt;p&gt;Test comment&lt;/p&gt;\n" .
+            "&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;\$test = &#039;test&#039;;&lt;/code&gt;&lt;/pre&gt;</div>\n";
         $expectedHtml2 = "<div>index</div>\n";
 
         $html = file_get_contents('/tmp/apprentice_output/test.html');

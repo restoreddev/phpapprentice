@@ -13,8 +13,8 @@ body {
     padding-bottom: 1em;
 }
 pre, code {
-    font-family: Consolas, monaco, monospace;
-    font-size: 16px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
     margin: 0 !important;
     border-radius: 0 !important;
     padding-top: 0.5em !important;
@@ -32,10 +32,12 @@ hr {
     border: 0;
     height: 1px;
     background-color: #EEE;
+    margin: 0.5em 0;
 }
 p {
-    max-width: 40em;
     line-height: 1.5;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
 }
 ol {
     padding-left: 1em;
@@ -99,9 +101,10 @@ button:hover .icon svg {
     clear: both;
 }
 .container {
-    width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1050px;
+}
+.container.small {
+    max-width: 750px;
 }
 .center {
     margin-left: auto;
@@ -159,8 +162,8 @@ button:hover .icon svg {
 .navigate-links a:hover {
     text-decoration: none;
 }
-.table-of-contents {
-    padding: 2em;
+.table-of-contents h4 {
+    margin-top: 0;
 }
 .table-of-contents ol {
     margin: 1em 0;
@@ -174,22 +177,21 @@ button:hover .icon svg {
     width: 1em;
     display: inline-block;
 }
-.home-title-wrapper {
-    display: grid;
-    grid-template-columns: 175px 1fr;
-    grid-template-rows: 1fr 1fr;
-}
 .home-title {
-
+    text-align: center;
 }
 .home-subtitle {
+    text-align: center;
     margin-top: 0;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 .home-logo {
-    grid-row-start: 1;
-    grid-row-end: 3;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 100px;
+    margin-bottom: 0.5em;
 }
 .home-logo svg {
     width: 150px;
@@ -220,6 +222,9 @@ button:hover .icon svg {
     overflow: scroll;
     box-shadow: 0 0 10px 0 $drop-shadow;
     box-sizing: border-box;
+}
+.modal-content .table-of-contents {
+    padding: 2em;
 }
 .closed {
     display: none;

@@ -23,12 +23,12 @@ class Page
     public $template;
 
     /**
-     * Name of code file to load as table
+     * Name of chapter file to load and parse
      * Will be skipped if none is provided
      *
      * @var string|null
      */
-    public $code;
+    public $chapter;
 
     /**
      * Map of data to passed to template
@@ -42,18 +42,18 @@ class Page
      *
      * @param string      $name
      * @param string|null $template
-     * @param string|null $code
+     * @param string|null $chapter
      * @param array       $variables
      */
     public function __construct(
         string $name,
         ?string $template = null,
-        ?string $code = null,
+        ?string $chapter = null,
         ?array $variables = []
     ) {
         $this->name = $name;
         $this->template = $template;
-        $this->code = $code;
+        $this->chapter = $chapter;
         $this->variables = $variables;
     }
 
@@ -69,9 +69,9 @@ class Page
     public static function create(
         string $name,
         ?string $template = null,
-        ?string $code = null,
+        ?string $chapter = null,
         ?array $variables = []
     ): Page {
-        return new static($name, $template, $code, $variables);
+        return new static($name, $template, $chapter, $variables);
     }
 }

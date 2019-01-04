@@ -2,6 +2,8 @@
 
 namespace Apprentice;
 
+use Parsedown;
+
 /**
  * Handles building pages in public folder
  * using configuration based on Page classes
@@ -95,13 +97,15 @@ class Build
      */
     private function buildPage(Page $page): string
     {
-        if (!empty($page->code)) {
-            if (!file_exists(config('code_dir') . '/' . $page->code)) {
-                throw new \Exception('Code file not found: ' . $page->code);
+        if (!empty($page->chapter)) {
+            if (!file_exists(config('chapter_dir') . '/' . $page->chapter)) {
+                throw new \Exception('Code file not found: ' . $page->chapter);
             }
 
-            $code = file_get_contents(config('code_dir') . '/' . $page->code);
-            $page->variables['code'] = $code;
+            $parser = new Parsedown();
+
+            $content = file_get_contents(config('chapter_dir') . '/' . $page->chapter);
+            $page->variables['chapter'] = $parser->text($content);
         }
 
         if ($page->template) {
