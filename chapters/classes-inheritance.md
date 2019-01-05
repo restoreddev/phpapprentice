@@ -1,5 +1,5 @@
 In PHP, a class can extend another class, inheriting the parent class'
-properties and methods. To make a class a child of another, use the "extends"
+properties and methods. To make a class a child of another, use the `extends`
 keyword after the class name.
 ```php
 <?php
@@ -39,7 +39,7 @@ $tractor = new Tractor();
 $tractor->drive();
 ```
 
-A class can use a parent's property or method from the "$this" variable.
+A class can use a parent's property or method from the `$this` variable.
 ```php
 class Motorcycle extends Vehicle
 {
@@ -56,9 +56,9 @@ $cycle = new Motorcycle();
 $cycle->pushPedal();
 ```
 
-If you override a parent's property or method, the "$this" variable will refer to the child's
+If you override a parent's property or method, the `$this` variable will refer to the child's
 implementation of the property or method. To call the parent's property or method explicity,
-use the "parent" keyword.
+use the `parent` keyword.
 ```php
 class Racecar extends Vehicle
 {

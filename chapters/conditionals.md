@@ -1,4 +1,3 @@
-
 When writing code, there will be times when you need to perform actions only under certain circumstances.
 There are several ways to control execution in PHP.
 We will start with an if statement.
@@ -12,10 +11,10 @@ if ($animal == 'cow') {
 ```
 
 All conditionals check to see if a statement evaluates to true or false.
-In the case above, since $animal equals 'cow', the statement returns true and the contents of the if statement are executed.
+In the case above, since `$animal` equals 'cow', the statement returns true and the contents of the if statement are executed.
 
 An if statement can have multiple conditions chained together.
-If the first if statement returns false, then PHP will check each elseif.
+If the first if statement returns false, then PHP will check each `elseif`.
 If none of the checks return true, then the else block will be executed.
 ```php
 $animal = 'bird';
@@ -32,7 +31,7 @@ if ($animal == 'dog') {
 
 An alternative to the if statement is the switch.
 A switch statement has multiple cases  to check if the value in parentheses equals something.
-In this statement, since $food equals 'apples', the switch will echo "Eating an apple".
+In this statement, since `$food` equals 'apples', the switch will echo "Eating an apple".
 The default case will be run if no other case evaluates to true, like an else statement.
 ```php
 $food = 'apples';

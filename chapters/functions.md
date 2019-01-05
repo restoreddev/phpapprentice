@@ -27,8 +27,8 @@ function greet($firstname, $lastname) {
 ```
 
 Then, you can pass in values when calling a function. In the greet function,
-'John' is assigned to $firstname and 'Smith' is assigned to
-$lastname.
+'John' is assigned to `$firstname` and 'Smith' is assigned to
+`$lastname`.
 ```php
 greet('John', 'Smith');
 ```

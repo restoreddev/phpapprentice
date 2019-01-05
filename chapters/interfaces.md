@@ -1,4 +1,4 @@
-The word "interface" is a confusing term because it is used for so many different concepts.
+The word `interface` is a confusing term because it is used for so many different concepts.
 Most often, we use it to describe the appearance of an app and how a user interacts with it.
 However, in PHP, an interface is a special construct that acts as a contract for classes.
 An interface defines what methods a class should have.
@@ -12,8 +12,8 @@ interface Chair
 }
 ```
 
-To use an interface with a class, you use the "implements" keyword after the class name.
-Now, the Recliner class must have a setColor method and a setLegs method.
+To use an interface with a class, you use the `implements` keyword after the class name.
+Now, the `Recliner` class must have a `setColor` method and a setLegs method.
 If you do not create the required methods on the class, PHP will throw an error.
 ```php
 class Recliner implements Chair
@@ -53,7 +53,7 @@ class CreditCard
 }
 ```
 
-Since CreditCard implements Payment, other developers can use the charge method, knowing it exists on the class.
+Since `CreditCard` implements `Payment`, other developers can use the charge method, knowing it exists on the class.
 ```php
 $creditCard = new CreditCard();
 $creditCard->charge(25);

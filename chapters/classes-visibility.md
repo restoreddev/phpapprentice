@@ -1,5 +1,5 @@
 In the last chapter, we defined properties and methods on the class using the public keyword.
-You can also define them using the "protected" and "private" keywords.
+You can also define them using the `protected` and `private` keywords.
 Both keywords prevent the properties and functions from being accessible outside the object.
 Only the object itself can use each.
 ```php
@@ -16,7 +16,7 @@ class Phone
 }
 ```
 
-We cannot set the number using "$phone->number = '123-456-7890'".
+We cannot set the number using `$phone->number = '123-456-7890'`.
 Instead, we can use the public method.
 ```php
 $phone = new Phone();
@@ -39,9 +39,9 @@ class Phone2
 }
 ```
 
-The "protected" and "private" keywords work a little differently.
+The `protected` and `private` keywords work a little differently.
 They both prevent functions and properties from being accessed outside an object.
-However, a method or property marked "protected" can still be accessed by a child class.
+However, a method or property marked `protected` can still be accessed by a child class.
 ```php
 class Phone3
 {
@@ -56,8 +56,8 @@ class Phone3
 }
 ```
 
-In class "Smartphone", the "caller" property is accessible because the parent class
-has it marked as "protected". However, "Smartphone" cannot access the "number" property
+In class `Smartphone`, the `caller` property is accessible because the parent class
+has it marked as `protected`. However, `Smartphone` cannot access the `number` property
 because it is still listed as private.
 ```php
 class Smartphone extends Phone3
