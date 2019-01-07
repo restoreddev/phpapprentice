@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/restoreddev/phpapprentice#readme",
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.20.1",
+    "@symfony/webpack-encore": "^0.22.4",
     "autoprefixer": "^8.6.5",
     "postcss-import": "^11.1.0",
-    "postcss-loader": "^2.1.6",
+    "postcss-loader": "^3.0.0",
     "postcss-simple-vars": "^4.1.0"
   },
   "dependencies": {
