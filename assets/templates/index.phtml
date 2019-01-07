@@ -1,8 +1,6 @@
 <?php partial('header', ['title' => 'PHP Apprentice']) ?>
 
 <div class="container small center">
-    <?php partial('menu_button') ?>
-
     <div>
         <div class="home-title-wrapper">
             <div class="home-logo"><?= icon('elephant') ?></div>
@@ -23,10 +21,13 @@
             Each example in PHP Apprentice can by typed into a PHP file and executed in the terminal.
             Let's get started! 😃
         </p>
-        <a href="<?= page_path('basics') ?>" class="button">
-            <div class="icon"><?= icon('book-reference') ?></div>
-            Open First Chapter
-        </a>
+        <div class="home-buttons">
+            <a href="<?= page_path('basics') ?>" class="button">
+                <div class="icon"><?= icon('book-reference') ?></div>
+                Open First Chapter
+            </a>
+            <?php partial('menu_button') ?>
+        </div>
     </div>
 </div>
 
