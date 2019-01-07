@@ -15,7 +15,7 @@ class Vehicle
 class Truck extends Vehicle {}
 ```
 
-The `Truck` class does not error because `Truck` extends `Vehicle`.
+Using the `drive` method on the `Truck` class does not cause an error because `Truck` extends `Vehicle`.
 ```php
 $truck = new Truck();
 $truck->drive();

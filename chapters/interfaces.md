@@ -13,7 +13,7 @@ interface Chair
 ```
 
 To use an interface with a class, you use the `implements` keyword after the class name.
-Now, the `Recliner` class must have a `setColor` method and a setLegs method.
+Now, the `Recliner` class must have a `setColor` method and a `setLegs` method.
 If you do not create the required methods on the class, PHP will throw an error.
 ```php
 class Recliner implements Chair

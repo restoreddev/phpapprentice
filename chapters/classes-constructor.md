@@ -53,7 +53,7 @@ class Tophat
 }
 ```
 
-`$tophat` now holds an instance of `Tophat`, not the color "Grey".
+`$tophat` now holds an instance of `Tophat`, not the string "Grey".
 ```php
 $tophat = new Tophat('Grey');
 ```

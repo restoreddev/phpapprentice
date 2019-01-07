@@ -17,7 +17,7 @@ class Processor
 
 In this case, if someone tried to use the `Processor` class
 to charge a credit card number that is not 16 characters long, an
-exception will be thrown which stops the rest of the code from running.
+`Exception` will be thrown which stops the rest of the code from running.
 ```php
 $processor = new Processor();
 $processor->charge('1234');
@@ -26,8 +26,8 @@ $processor->charge('1234');
 A developer who wants to prevent an exception from stopping code execution
 can catch the exception and use it for logging or display the error to a user.
 
-Just wrap the code that might throw an exception with the keyword `try` and brackets
-followed by `catch`, the exception type in parentheses and more brackets.
+Just wrap the code that might throw an exception with the keyword `try` and braces
+followed by `catch`, the exception type in parentheses and more braces.
 ```php
 try {
     $processor->charge('1234');
@@ -47,7 +47,7 @@ Then, you can try to catch your exception instead of the base exception.
 try {
     throw new MyCustomException('I am a custom exception');
 } catch (MyCustomException $e) {
-    echo "Cauth MyCustomException\n";
+    echo "Caught MyCustomException\n";
 }
 ```
 
