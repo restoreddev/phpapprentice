@@ -1,4 +1,3 @@
-
 The variable is the basic building block of any programming language.
 In PHP, all variables start with a dollar sign.
 ```php

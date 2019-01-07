@@ -22,7 +22,7 @@ $house = new House('Green');
 ```
 
 However, what if you want the blueprint to have properties and methods?
-That is when you use the "static" keyword. In this class, we will define a default color
+That is when you use the `static` keyword. In this class, we will define a default color
 on the class itself and then use it when creating a new object.
 ```php
 class Skyscraper
@@ -42,7 +42,7 @@ class Skyscraper
 }
 ```
 
-You can access static methods and properties using double colons on "self" inside the object
+You can access static methods and properties using double colons on `self` inside the object
 or on the class name outside of the object. Static methods and properties can only access
 other static methods and properties.
 ```php
@@ -75,7 +75,7 @@ class TinyHouse
 }
 ```
 
-Using "build" can make more sense than "new", but it is ultimately a personal preference.
+Using `build` can make more sense than `new`, but it is ultimately a personal preference.
 ```php
 $house = TinyHouse::build('Blue', 4, true);
 ```

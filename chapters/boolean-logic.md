@@ -8,15 +8,9 @@ If so, it will return true. If not, it will return false.
 $a = true;
 $b = true;
 $c = false;
-```
 
-Returns true.
-```php
-$a && $b;
-```
-Returns false.
-```php
-$a && $c;
+$a && $b; // returns true
+$a && $c; // returns false
 ```
 
 Using two pipe characters checks if either value is true.
@@ -27,27 +21,14 @@ $a = true;
 $b = false;
 $c = false;
 $d = true;
+
+$a || $b; // returns true
+$b || $c; // returns false
+$a || $d; // returns true
 ```
 
-Returns true.
-```php
-$a || $b;
-```
-Returns false.
-```php
-$b || $c;
-```
-Returns true.
-```php
-$a || $d;
-```
-
-Using an exclamation point returns the value flipped.
+Using an exclamation point returns the opposite value.
 ```php
 $d = true;
-```
-
-Outputs false.
-```php
-echo !$d;
+echo !$d; // outputs false
 ```

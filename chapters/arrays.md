@@ -1,7 +1,7 @@
 In PHP, arrays are used to store a list of items in a single variable.
 There are two ways to create an array.
 
-First, you can use the array construct to pass in values separated by commas
+First, you can use the `array` construct to pass in values separated by commas
 and it will return an array.
 ```php
 <?php
@@ -25,7 +25,7 @@ echo $groceryList[1] . "\n";
 ```
 
 You can also assign keys in an array using numbers or strings.
-It is very common to create an array with string keys. The pattern
+It is very common to create an array with string keys. The feature
 is called an associative array or a map.
 ```php
 $car = ['make' => 'Toyota', 'model' => 'Camry'];

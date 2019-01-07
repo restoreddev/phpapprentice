@@ -8,7 +8,7 @@ $lastname = "Johnson";
 ```
 
 A double quoted string can interpret special characters starting
-with a back slash to create formatting. The \n creates a newline
+with a back slash to create formatting. The `\n` creates a newline
 between the names and after them.
 ```php
 echo "Jacob\nJones\n";

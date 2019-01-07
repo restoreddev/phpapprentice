@@ -1,6 +1,6 @@
 Abstract classes are similar to interfaces in that they define methods that a sub-class must implement.
-However, an abstract class can also have normal methods. To create an abstract class, use the "abstract"
-keyword followed by class and the name of the class.
+However, an abstract class can also have normal methods. To create an abstract class, use the `abstract`
+keyword followed by `class` and the name of the class.
 ```php
 <?php
 
@@ -40,7 +40,7 @@ class Android extends CellPhone
 }
 ```
 
-Our iPhone and Android classes can now both use the turnOn method and the unlock method.
+Our iPhone and Android classes can now both use the `turnOn` method and the `unlock` method.
 ```php
 $iPhone = new iPhone();
 $iPhone->turnOn();
@@ -54,5 +54,5 @@ $android->unlock();
 Lastly, you cannot create an instance of an abstract class. PHP would not know how to use the abstract methods
 so when you try to create an abstract instance you will get an error.
 ```php
-$cellPhone = new CellPhone();
+$cellPhone = new CellPhone(); // causes an error
 ```
