@@ -250,11 +250,11 @@ button:hover .icon svg {
     max-height: 200px;
 }
 .toc-404 {
-    max-width: 250px;
+    max-width: 200px;
     margin: 0 auto;
 }
 .message-404 {
     font-size: 2em;
-    margin: 0 auto;
+    margin: 1em auto;
     text-align: center;
 }
