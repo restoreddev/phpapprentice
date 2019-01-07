@@ -1,12 +1,7 @@
 <?php partial('header', ['title' => $title, 'subtitle' => $subtitle]) ?>
 
 <div class="container small center">
-    <div class="menu">
-        <button class="menu-button" title="Open Menu">
-            <div class="icon"><?= icon('menu') ?></div>
-            Menu
-        </button>
-    </div>
+    <?php partial('menu_button') ?>
 
     <h1><?= escape($title) ?></h1>
     <h3 class="subtitle"><?= escape($subtitle) ?></h3>
@@ -29,13 +24,6 @@
     </div>
 </div>
 
-<div class="modal closed">
-    <div class="modal-content">
-        <button class="modal-button right" title="Close">
-            <div class="icon"><?= icon('close-outline') ?></div>
-        </button>
-        <?php partial('table_of_contents') ?>
-    </div>
-</div>
 
+<?php partial('menu_modal') ?>
 <?php partial('footer') ?>
