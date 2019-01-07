@@ -12,13 +12,19 @@ body {
     padding-top: 1em;
     padding-bottom: 1em;
 }
-pre, code {
+code {
+    background-color: #F0F0F0;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    padding: 0.10em 0.25em;
+}
+pre, pre code {
+    background-color: transparent;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 14px;
     margin: 0 !important;
     border-radius: 0 !important;
-    padding-top: 0.5em !important;
-    padding-bottom: 0.5em !important;
+    padding: 0.5em 0 0.5em 0;
 }
 a {
     color: $primary-color; /* #4078f2 */
