@@ -90,7 +90,7 @@ button:hover .icon svg {
 .button {
     background-color: $primary-color;
     color: $white;
-    padding: 0.5em 1em;
+    padding: 0.25em 0.75em;
     border-radius: 2em;
     display: inline-block;
 }
@@ -207,9 +207,12 @@ button:hover .icon svg {
     width: 150px;
     height: 100px;
 }
+.home-buttons {
+    margin-top: 1.5em;
+}
 .home-buttons .menu {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: 0.25em 0.75em;
 }
 .menu {
     margin-bottom: 1.5em;
