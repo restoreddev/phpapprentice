@@ -1,6 +1,6 @@
 If you want to follow along by writing code, start by downloading a code editor. I recommend
 [Visual Studio Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
-Next, create a new file in your editor called `basics.php` and save it anywhere on your computer like a folder
+Next, create a new file in your editor called `basics.php` and save it anywhere on your computer, like a folder
 in your documents called `phpapprentice`. Now, we can write some PHP.
 
 All PHP files must start with a `<?php` tag unless it is for a html template.
@@ -47,5 +47,5 @@ No semi-colon is a no-no
 PHP Apprentice
 ```
 
-With any code that we explore in future chapters, I recommend writing a PHP file for it.
+With any code in future chapters, I recommend writing a PHP file for it.
 It is a great way to get some practice with the language.

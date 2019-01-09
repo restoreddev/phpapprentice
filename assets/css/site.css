@@ -90,7 +90,7 @@ button:hover .icon svg {
 .button {
     background-color: $primary-color;
     color: $white;
-    padding: 0.25em 0.75em;
+    padding: 0.5em 0.75em;
     border-radius: 2em;
     display: inline-block;
 }
@@ -212,7 +212,23 @@ button:hover .icon svg {
 }
 .home-buttons .menu {
     display: inline-block;
-    padding: 0.25em 0.75em;
+    padding: 0.5em 0.75em;
+}
+@media only screen and (max-width: 420px) {
+    .home-buttons {
+        padding-top: 0.5em;
+        max-width: 15em;
+        margin: 0 auto;
+    }
+    .home-buttons .button {
+        text-align: center;
+        display: block;
+    }
+    .home-buttons .menu {
+        margin-top: 0.5em;
+        text-align: center;
+        display: block;
+    }
 }
 .menu {
     margin-bottom: 1.5em;
