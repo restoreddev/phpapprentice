@@ -25,7 +25,7 @@ class Bicycle
 ```
 
 Then, when you create an instance of the class, you can set and use
-the color attribute on the bicycle using `->`.
+the attribute on the instance using `->`.
 ```php
 $bike = new Bicycle();
 $bike->color = 'Blue';
@@ -55,7 +55,7 @@ class Tricycle
 }
 ```
 
-You can execute a method on an object using the same `->` arrow characters.
+You can execute a method on an object using the same `->` arrow characters with parentheses after the method name.
 ```php
 $bike = new Tricycle();
 $bike->color = 'Red';

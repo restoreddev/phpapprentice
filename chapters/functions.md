@@ -56,7 +56,7 @@ $sum = function ($a, $b) {
 };
 ```
 
-You can execute a closure by putting parentheses after the variable.
+You can execute a closure by putting parentheses after the variable that contains the closure.
 ```php
 echo $sum(1, 2) . "\n";
 ```

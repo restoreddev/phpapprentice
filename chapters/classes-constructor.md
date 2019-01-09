@@ -3,7 +3,8 @@ In the previous examples, we always left the parentheses empty.
 ```php
 <?php
 
-class Hat {
+class Hat
+{
     public $color;
 
     public function setColor($color)
@@ -42,7 +43,7 @@ You can write:
 $ballcap = new Ballcap('Blue');
 ```
 
-Constructors do not return values because the return value is a always a new object.
+Constructors do not return values because the return value is always a new object.
 ```php
 class Tophat
 {

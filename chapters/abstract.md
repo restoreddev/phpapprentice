@@ -51,7 +51,7 @@ $android->turnOn();
 $android->unlock();
 ```
 
-Lastly, you cannot create an instance of an abstract class. PHP would not know how to use the abstract methods
+You cannot create an instance of an abstract class. PHP would not know how to use the abstract methods
 so when you try to create an abstract instance you will get an error.
 ```php
 $cellPhone = new CellPhone(); // causes an error

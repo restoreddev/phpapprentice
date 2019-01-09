@@ -10,32 +10,24 @@ $b = false;
 
 There are many constructs and functions that will return a boolean.
 To start, let's look at comparisons.
+
+Double equals checks if two values are equal.
 ```php
 $one = 1;
 $two = 2;
-```
 
-Double equals checks if two values are equal.
-This statement will return false.
-```php
-$one == $two;
+$one == $two; // returns false
 ```
 
 An exclamation point and equal sign check if two values are not equal.
-This statement will return true.
 ```php
-$one != $two;
+$one != $two; // returns true
 ```
 
 You can use greater than and less than symbols to check for comparisons too.
-This statement will return false.
 ```php
-$one > $two;
-```
-
-This statement will return true.
-```php
-$one < $two;
+$one > $two; // returns false
+$one < $two; // returns true
 ```
 
 If you combine a greater than or less than symbol with an equal,

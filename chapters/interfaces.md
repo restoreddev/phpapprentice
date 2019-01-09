@@ -44,17 +44,19 @@ interface Payment
     public function charge($amount);
 }
 
-class CreditCard
+class CreditCard implements Payment
 {
     public function charge($amount)
     {
-
+        // contacts a credit card payment provider...
     }
 }
 ```
 
-Since `CreditCard` implements `Payment`, other developers can use the charge method, knowing it exists on the class.
+Since `CreditCard` implements `Payment`, a developer can check that it implements `Payment` and then use the `charge` method knowing the function exists on the class.
 ```php
 $creditCard = new CreditCard();
-$creditCard->charge(25);
+if ($creditCard instanceof Payment) {
+    $creditCard->charge(25);
+}
 ```
