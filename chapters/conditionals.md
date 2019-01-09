@@ -15,7 +15,7 @@ In the case above, since `$animal` equals 'cow', the statement returns true and 
 
 An if statement can have multiple conditions chained together.
 If the first if statement returns false, then PHP will check each `elseif`.
-If none of the checks return true, then the else block will be executed.
+If none of the checks return true, then the `else` block will be executed.
 ```php
 $animal = 'bird';
 if ($animal == 'dog') {

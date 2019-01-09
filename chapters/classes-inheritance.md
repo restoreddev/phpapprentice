@@ -50,7 +50,7 @@ class Motorcycle extends Vehicle
 }
 ```
 
-Outputs "driving...".
+The `pushPedal` method outputs "driving...".
 ```php
 $cycle = new Motorcycle();
 $cycle->pushPedal();
@@ -71,7 +71,7 @@ class Racecar extends Vehicle
 }
 ```
 
-Outputs "driving..." and "driving even faster...".
+The `drive` method on `Racecar` now outputs "driving..." and "driving even faster...".
 ```php
 $racecar = new Racecar();
 $racecar->drive();

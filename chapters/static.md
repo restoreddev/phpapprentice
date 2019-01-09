@@ -53,7 +53,7 @@ echo $skyscraper->color . "\n";
 
 Often, you will see static constructors in PHP.
 A static constructor creates a new instance of an object. Why would do that when you can just use "new Class" to create
-the object? The most common reason is to make the code more readable.
+the object? A common reason is to make the code more readable.
 ```php
 class TinyHouse
 {
