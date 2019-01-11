@@ -37,7 +37,7 @@ You can also return a value from a function. You can only
 return a single value from a function.
 ```php
 function capitalize($value) {
-    return strtoupper($value);
+    return mb_strtoupper($value);
 }
 ```
 
