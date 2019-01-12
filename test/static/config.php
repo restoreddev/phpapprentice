@@ -9,8 +9,8 @@ return [
     'output_dir' => '/tmp/apprentice_output',
     'files_dir' => __DIR__ . '/files',
     'pages' => [
-        Page::create('index', 'index.phtml'),
-        Page::create('test', null, 'test.md', [
+        Page::create('index', null, [], 'index.phtml'),
+        Page::create('test', 'test.md', [
             'title' => 'Test Title',
             'subtitle' => 'Test Subtitle',
             'description' => 'Test Description',
