@@ -48,6 +48,8 @@ The following comparisons return true.
 1 === 1;
 ```
 
+The comparison operator do implicit conversion by default. This is why `1 == '1'` is true. If you also need to check the type while doing comparisons, use a triple equal.
+
 These return false.
 ```php
 1 === '1';
