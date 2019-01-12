@@ -47,14 +47,14 @@ class Page
      */
     public function __construct(
         string $name,
-        ?string $template = null,
         ?string $chapter = null,
-        ?array $variables = []
+        ?array $variables = [],
+        ?string $template = null
     ) {
         $this->name = $name;
-        $this->template = $template;
         $this->chapter = $chapter;
         $this->variables = $variables;
+        $this->template = $template;
     }
 
     /**
@@ -68,10 +68,10 @@ class Page
      */
     public static function create(
         string $name,
-        ?string $template = null,
         ?string $chapter = null,
-        ?array $variables = []
+        ?array $variables = [],
+        ?string $template = null
     ): Page {
-        return new static($name, $template, $chapter, $variables);
+        return new static($name, $chapter, $variables, $template);
     }
 }
