@@ -41,18 +41,26 @@ var onLoad = function () {
 document.onkeydown = function (e) {
     e = e || window.event;
 
-    var isEscape = false;
-    if ("key" in e) {
-        isEscape = (e.key == "Escape" || e.key == "Esc");
-    } else {
-        isEscape = (e.keyCode == 27);
-    }
-
-    if (isEscape) {
-        var modal = document.querySelector('.modal');
-        if (modal && !modal.classList.contains('closed')) {
-            modal.classList.add('closed');
-        }
+    switch (e.key) {
+        case 'Esc':
+        case 'Escape':
+            var modal = document.querySelector('.modal');
+            if (modal && !modal.classList.contains('closed')) {
+                modal.classList.add('closed');
+            }
+            break;
+        case 'ArrowRight':
+            var link = document.querySelector('#next-link');
+            if (link) {
+                window.location.href = link.href;
+            }
+            break;
+        case 'ArrowLeft':
+            var link = document.querySelector('#prev-link');
+            if (link) {
+                window.location.href = link.href;
+            }
+            break;
     }
 };
 
