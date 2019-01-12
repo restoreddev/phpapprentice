@@ -10,13 +10,13 @@
     <div class="clearfix"></div>
     <div class="navigate-links">
         <?php if (!empty($previous)): ?>
-            <a href="<?= page_path($previous) ?>" title="Previous">
+            <a href="<?= page_path($previous) ?>" title="Previous" id="prev-link">
                 <div class="icon"><?= icon('cheveron-outline-left') ?></div>
                 Previous
             </a>
         <?php endif ?>
         <?php if (!empty($next)): ?>
-            <a href="<?= page_path($next) ?>" title="Next">
+            <a href="<?= page_path($next) ?>" title="Next" id="next-link">
                 Next
                 <div class="icon"><?= icon('cheveron-outline-right') ?></div>
             </a>
