@@ -44,116 +44,116 @@ return [
      *
      */
     'pages' => [
-        Page::create('index', 'index.phtml'),
-        Page::create('installing-php', 'installing-php.phtml'),
-        Page::create('credits', 'credits.phtml'),
-        Page::create('404', '404.phtml'),
-        Page::create('basics', null, 'basics.md', [
+        Page::create('index', null, [], 'index.phtml'),
+        Page::create('installing-php', null, [], 'installing-php.phtml'),
+        Page::create('credits', null, [], 'credits.phtml'),
+        Page::create('404', null, [], '404.phtml'),
+        Page::create('basics', 'basics/basics.md', [
             'title' => 'Basics',
             'subtitle' => 'Getting started',
             'next' => 'variables',
         ]),
-        Page::create('variables', null, 'variables.md', [
+        Page::create('variables', 'basics/variables.md', [
             'title' => 'Variables',
             'subtitle' => 'The building blocks of PHP',
             'previous' => 'basics',
             'next' => 'arithmetic',
         ]),
-        Page::create('arithmetic', null, 'arithmetic.md', [
+        Page::create('arithmetic', 'basics/arithmetic.md', [
             'title' => 'Arithmetic',
             'subtitle' => 'Doing math like a pro',
             'previous' => 'variables',
             'next' => 'strings',
         ]),
-        Page::create('strings', null, 'strings.md', [
+        Page::create('strings', 'basics/strings.md', [
             'title' => 'Strings',
             'subtitle' => 'Working with text',
             'previous' => 'arithmetic',
             'next' => 'comparisons',
         ]),
-        Page::create('comparisons', null, 'comparisons.md', [
+        Page::create('comparisons', 'basics/comparisons.md', [
             'title' => 'Comparisons',
             'subtitle' => 'Equality checking',
             'previous' => 'strings',
             'next' => 'boolean-logic',
         ]),
-        Page::create('boolean-logic', null, 'boolean-logic.md', [
+        Page::create('boolean-logic', 'basics/boolean-logic.md', [
             'title' => 'Boolean Logic',
             'subtitle' => 'Is it a yes or a no?',
             'previous' => 'comparisons',
             'next' => 'conditionals',
         ]),
-        Page::create('conditionals', null, 'conditionals.md', [
+        Page::create('conditionals', 'basics/conditionals.md', [
             'title' => 'Conditionals',
             'subtitle' => 'Checking the if before the what',
             'previous' => 'boolean-logic',
             'next' => 'loops',
         ]),
-        Page::create('loops', null, 'loops.md', [
+        Page::create('loops', 'basics/loops.md', [
             'title' => 'Loops',
             'subtitle' => 'Increase your repetitions',
             'previous' => 'conditionals',
             'next' => 'arrays',
         ]),
-        Page::create('arrays', null, 'arrays.md', [
+        Page::create('arrays', 'basics/arrays.md', [
             'title' => 'Arrays',
             'subtitle' => 'Time to make a list',
             'previous' => 'loops',
             'next' => 'functions',
         ]),
-        Page::create('functions', null, 'functions.md', [
+        Page::create('functions', 'basics/functions.md', [
             'title' => 'Functions',
             'subtitle' => 'Reusable code',
             'previous' => 'arrays',
             'next' => 'classes',
         ]),
-        Page::create('classes', null, 'classes.md', [
+        Page::create('classes', 'basics/classes.md', [
             'title' => 'Classes',
             'subtitle' => 'Object-oriented programming',
             'previous' => 'functions',
             'next' => 'classes-inheritance',
         ]),
-        Page::create('classes-inheritance', null, 'classes-inheritance.md', [
+        Page::create('classes-inheritance', 'basics/classes-inheritance.md', [
             'title' => 'Classes: Inheritance',
             'subtitle' => 'Extend your objects',
             'previous' => 'classes',
             'next' => 'classes-visibility',
         ]),
-        Page::create('classes-visibility', null, 'classes-visibility.md', [
+        Page::create('classes-visibility', 'basics/classes-visibility.md', [
             'title' => 'Classes: Visibility',
             'subtitle' => 'Privatizing your objects',
             'previous' => 'classes-inheritance',
             'next' => 'classes-constructor',
         ]),
-        Page::create('classes-constructor', null, 'classes-constructor.md', [
+        Page::create('classes-constructor', 'basics/classes-constructor.md', [
             'title' => 'Classes: Constructor',
             'subtitle' => 'Construct your objects',
             'previous' => 'classes-visibility',
             'next' => 'static',
         ]),
-        Page::create('static', null, 'static.md', [
+        Page::create('static', 'basics/static.md', [
             'title' => 'Static',
             'subtitle' => 'Class properties and methods',
             'previous' => 'classes-constructor',
             'next' => 'interfaces',
         ]),
-        Page::create('interfaces', null, 'interfaces.md', [
+        Page::create('interfaces', 'basics/interfaces.md', [
             'title' => 'Interfaces',
             'subtitle' => 'Writing code contracts',
             'previous' => 'static',
             'next' => 'abstract',
         ]),
-        Page::create('abstract', null, 'abstract.md', [
+        Page::create('abstract', 'basics/abstract.md', [
             'title' => 'Abstract Classes',
             'subtitle' => 'Inheriting an interface',
             'previous' => 'interfaces',
             'next' => 'exceptions',
         ]),
-        Page::create('exceptions', null, 'exceptions.md', [
+        Page::create('exceptions', 'basics/exceptions.md', [
             'title' => 'Exceptions',
             'subtitle' => 'Throwing errors',
             'previous' => 'abstract',
-            'next' => '',
+            'next' => 'web-http',
         ]),
     ],
 ];
