@@ -60,3 +60,40 @@ You can execute a closure by putting parentheses after the variable that contain
 ```php
 echo $sum(1, 2) . "\n";
 ```
+
+A closure can only access the function's arguments ($a and $b) and any other variables created within itself. In this example, the current scope can access the $pi variable.
+```php
+$addToPi = function ($a, $b) {
+    $pi = 3.14;
+    return $pi + $a + $b;
+};
+echo $addToPi(1, 2) . "\n"; // Output: 6.14
+```
+
+If the $pi variable was defined outside the closure to make it reusable, then the close would not be able to access it.
+```php
+$pi = 3.14;
+$addToPi = function ($a, $b) {
+    return $pi + $a + $b;
+};
+echo $addToPi(1, 2) . "\n"; // Output: Undefined variable: pi
+```
+
+You can make a closure access a variable from the parent scope by using the `global` keyword. 
+```php
+$pi = 3.14;
+$addToPi = function ($a, $b) {
+    global $pi;
+    return $pi + $a + $b;
+};
+echo $addToPi(1, 2) . "\n"; // Output: Output: 6.14
+````
+
+You can also make a closure access one or more variable from the parent scope by using the `use` language construct. 
+```php
+$pi = 3.14;
+$addToPi = function ($a, $b) use ($pi) {
+    return $pi + $a + $b;
+};
+echo $addToPi(1, 2) . "\n"; // Output: Output: 6.14
+````
