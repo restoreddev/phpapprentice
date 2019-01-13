@@ -153,7 +153,7 @@ return [
             'title' => 'Exceptions',
             'subtitle' => 'Throwing errors',
             'previous' => 'abstract',
-            'next' => 'web-http',
+            'next' => '',
         ]),
     ],
 ];
