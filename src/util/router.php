@@ -16,8 +16,13 @@ if ($pathinfo['dirname'] == '/' && !isset($pathinfo['extension'])) {
 }
 
 if ($pathinfo['extension'] == 'html') {
+    $name = $pathinfo['filename'];
+    if ($pathinfo['dirname'] != '/') {
+        $name = ltrim($pathinfo['dirname'], '/') . '/' . $name;
+    }
+
     $build = new Apprentice\Build;
-    $output = $build->runSingleBuild($pathinfo['filename']);
+    $output = $build->runSingleBuild($name);
 
     echo $output;
 

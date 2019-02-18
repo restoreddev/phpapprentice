@@ -153,6 +153,18 @@ return [
             'title' => 'Exceptions',
             'subtitle' => 'Throwing errors',
             'previous' => 'abstract',
+            'next' => 'web/http',
+        ]),
+        Page::create('web/http', 'web/01-http.md', [
+            'title' => 'HTTP',
+            'subtitle' => 'Understanding the format of the web',
+            'previous' => 'exceptions',
+            'next' => 'web/http-post',
+        ]),
+        Page::create('web/http-post', 'web/02-http-post.md', [
+            'title' => 'HTTP POST',
+            'subtitle' => 'Sending data to a server',
+            'previous' => 'web/http',
             'next' => '',
         ]),
     ],

@@ -8,7 +8,7 @@ Encore
     .enablePostCssLoader()
     .configureBabel(function (babel) {
         babel.plugins.push(['prismjs', {
-            "languages": ["php"],
+            "languages": ["php", "http"],
             "css": false,
         }]);
     })
