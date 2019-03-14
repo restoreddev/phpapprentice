@@ -260,6 +260,9 @@ button:hover .icon svg {
 .modal-content .table-of-contents {
     padding: 2em;
 }
+.section-title {
+    margin-bottom: 0;
+}
 .closed {
     display: none;
 }

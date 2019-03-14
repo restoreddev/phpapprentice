@@ -115,7 +115,14 @@ class Build
         }
         $output = $this->getOutput($template, $page->variables);
 
-        file_put_contents(config('output_dir') . '/' . $page->name . '.html', $output);
+        $path = config('output_dir') . '/' . $page->name . '.html';
+        $dir = pathinfo($path, PATHINFO_DIRNAME);
+
+        if (!file_exists($dir)) {
+            mkdir($dir, 0777, true);
+        }
+
+        file_put_contents($path, $output);
 
         return $output;
     }
