@@ -165,6 +165,12 @@ return [
             'title' => 'HTTP POST',
             'subtitle' => 'Sending data to a server',
             'previous' => 'web/http',
+            'next' => 'web/http-server',
+        ]),
+        Page::create('web/http-server', 'web/03-http-server.md', [
+            'title' => 'PHP HTTP Server',
+            'subtitle' => 'Handling HTTP Requests in PHP',
+            'previous' => 'web/http-post',
             'next' => '',
         ]),
     ],

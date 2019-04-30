@@ -32,5 +32,3 @@ POST requests are used to send data to a server. A server will process the data 
 We have been talking a lot about how a server can process requests and send responses. How do programmers develop a server to handle HTTP requests? With PHP!
 
 PHP was built with web server development in mind. Let us write our first PHP server script.
-
-
