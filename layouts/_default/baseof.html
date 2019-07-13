@@ -10,13 +10,15 @@
 
     {{ $css := resources.Get "site.css" }}
     {{ $style := $css | resources.PostCSS }}
-    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+    {{ $secureCss := $style | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" type="text/css" href="{{ $secureCss.Permalink }}" integrity="{{ $secureCss.Data.Integrity }}">
     <link rel="icon" href="/favicon-32.png">
 
     {{ $prism := resources.Get "prism.js" }}
     {{ $site := resources.Get "site.js"}}
     {{ $js := slice $prism $site | resources.Concat "bundle.js" }}
-    <script src="{{ $js.Permalink }}"></script>
+    {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 </head>
 <body>
   {{ block "main" . }}{{ end }}
