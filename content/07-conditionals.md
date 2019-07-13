@@ -1,3 +1,11 @@
++++
+title = "Conditionals"
+description = "Checking the if before the what"
+tags = ["php", "conditionals", "if", "switch"]
+slug = "conditionals"
+previous = "boolean-logic.html"
+next = "loops.html"
++++
 When writing code, there will be times when you need to perform actions only under certain circumstances.
 There are several ways to control execution in PHP.
 We will start with an if statement.

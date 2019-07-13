@@ -1,3 +1,11 @@
++++
+title = "Classes"
+description = "Object-oriented programming"
+tags = ["php", "class", "object-oriented programming"]
+slug = "classes"
+previous = "functions.html"
+next = "classes-inheritance.html"
++++
 Classes allow you to define your own data types. All classes start with the
 class keyword followed by the name of the class and opening and closing curly braces.
 ```php

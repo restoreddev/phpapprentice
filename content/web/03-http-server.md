@@ -1,3 +1,10 @@
++++
+title = "PHP HTTP Server"
+description = "Handling HTTP Requests in PHP"
+tags = ["php", "http", "server"]
+slug = "http-server"
+previous = "web/http-post.html"
++++
 In PHP, you usually use a separate web server program that accepts HTTP requests and passes them to PHP to create a response. Common examples of separate web server programs are Apache and Nginx. However, PHP has a built in web server we can use during development.
 
 To use the development web server, open a terminal and a new folder for holding your code. Create a file called `index.php` and put this PHP code in it:

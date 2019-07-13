@@ -1,3 +1,11 @@
++++
+title = "Arithmetic"
+description = "Doing math like a pro"
+tags = ["php", "arithmetic", "math"]
+slug = "arithmetic"
+previous = "variables.html"
+next = "strings.html"
++++
 Now that we know how to create variables, let's look at doing some math.
 ```php
 <?php

@@ -1,3 +1,11 @@
++++
+title = "HTTP Post"
+description = "Sending data to a server"
+tags = ["web", "http", "post"]
+slug = "http-post"
+previous = "web/http.html"
+next = "web/http-server.html"
++++
 HTTP uses multiple different request types for indicating actions that should be performed on the server. The most common ones
 you will use are:
 - GET     ->  Retrieve a resource

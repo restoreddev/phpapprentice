@@ -1,3 +1,11 @@
++++
+title = "Interfaces"
+description = "Writing code contracts"
+tags = ["php", "interface"]
+slug = "interfaces"
+previous = "static.html"
+next = "abstract.html"
++++
 The word `interface` is a confusing term because it is used for so many different concepts.
 Most often, we use it to describe the appearance of an app and how a user interacts with it.
 However, in PHP, an interface is a special construct that acts as a contract for classes.

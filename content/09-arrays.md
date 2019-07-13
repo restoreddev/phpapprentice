@@ -1,3 +1,11 @@
++++
+title = "Arrays"
+description = "Time to make a list"
+tags = ["php", "array", "list"]
+slug = "arrays"
+previous = "loops.html"
+next = "functions.html"
++++
 In PHP, arrays are used to store a list of items in a single variable.
 There are two ways to create an array.
 

@@ -1,3 +1,11 @@
++++
+title = "Functions"
+description = "Reusable code"
+tags = ["php", "function"]
+slug = "functions"
+previous = "arrays.html"
+next = "classes.html"
++++
 A function allows you to store code under a name and then execute
 that code later.
 

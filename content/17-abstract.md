@@ -1,3 +1,11 @@
++++
+title = "Abstract"
+description = "Inheriting an interface"
+tags = ["php", "abstract"]
+slug = "abstract"
+previous = "interfaces.html"
+next = "exceptions.html"
++++
 Abstract classes are similar to interfaces in that they define methods that a sub-class must implement.
 However, an abstract class can also have normal methods. To create an abstract class, use the `abstract`
 keyword followed by `class` and the name of the class.

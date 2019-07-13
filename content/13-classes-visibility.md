@@ -1,3 +1,11 @@
++++
+title = "Classes: Visibility"
+description = "Privatizing your objects"
+tags = ["php", "private", "protected", "visibility"]
+slug = "classes-visibility"
+previous = "classes-inheritance.html"
+next = "classes-constructor.html"
++++
 In the last chapter, we defined properties and methods on the class using the public keyword.
 You can also define them using the `protected` and `private` keywords.
 Both keywords prevent the properties and functions from being accessible outside the object.

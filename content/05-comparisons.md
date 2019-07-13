@@ -1,3 +1,11 @@
++++
+title = "Comparisons"
+description = "Equality checking"
+tags = ["php", "comparisons"]
+slug = "comparisons"
+previous = "strings.html"
+next = "boolean-logic.html"
++++
 A boolean is a value that is always 0 or 1, yes or no, on or off.
 In PHP, a boolean is represented by the words true and false.
 While programming, you will often want to know if something is positive or negative.

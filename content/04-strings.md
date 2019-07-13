@@ -1,3 +1,11 @@
++++
+title = "Strings"
+description = "Working with text"
+tags = ["php", "strings"]
+slug = "strings"
+previous = "arithmetic.html"
+next = "comparisons.html"
++++
 As seen in the first chapter, a string is a group of characters created by
 surrounding text in single or double quotes.
 ```php

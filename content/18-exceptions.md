@@ -1,3 +1,11 @@
++++
+title = "Exceptions"
+description = "Throwing errors"
+tags = ["php", "exception"]
+slug = "exceptions"
+previous = "abstract.html"
+next = "web/http.html"
++++
 Sometimes things go wrong when someone uses your code. How do we handle this situation?
 PHP has Exceptions to define errors and the ability to `throw` them to stop code
 execution and tell the user of your code that something is wrong.

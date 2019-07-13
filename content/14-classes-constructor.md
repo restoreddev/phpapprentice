@@ -1,3 +1,11 @@
++++
+title = "Classes: Constructor"
+description = "Construct your objects"
+tags = ["php", "construct", "constructor", "new"]
+slug = "classes-constructor"
+previous = "classes-visibility.html"
+next = "static.html"
++++
 Whenever you create an object in PHP, you put parentheses after the class name.
 In the previous examples, we always left the parentheses empty.
 ```php

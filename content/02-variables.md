@@ -1,3 +1,11 @@
++++
+title = "Variables"
+description = "The building blocks of PHP"
+tags = ["php", "variables"]
+slug = "variables"
+previous = "basics.html"
+next = "arithmetic.html"
++++
 The variable is the basic building block of any programming language.
 In PHP, all variables start with a dollar sign.
 ```php

@@ -1,3 +1,11 @@
++++
+title = "Loops"
+description = "Increase your repetitions"
+tags = ["php", "loop", "foreach", "for"]
+slug = "loops"
+previous = "conditionals.html"
+next = "arrays.html"
++++
 A loop tells PHP to run a block of code more than once.
 A classic loop is a while loop.
 A `while` loop will continue to run the block of code as long as the value in parentheses is true.

@@ -1,3 +1,11 @@
++++
+title = "HTTP"
+description = "Understanding the format of the web"
+tags = ["web", "http"]
+slug = "http"
+previous = "exceptions.html"
+next = "web/http-post.html"
++++
 HTTP stands for Hypertext Transfer Protocol. It is a standard for how requests and responses should be formatted for
 a server and a web browser. When you open a link in your web browser, you are sending a HTTP request to a server and it
 is responding with a HTTP response. The browser then takes the response, parses it and displays it to the user.

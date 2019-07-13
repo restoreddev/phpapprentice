@@ -1,3 +1,11 @@
++++
+title = "Boolean Logic"
+description = "Is it a yes or a no?"
+tags = ["php", "booleans"]
+slug = "boolean-logic"
+previous = "comparisons.html"
+next = "conditionals.html"
++++
 Boolean logic is used to combine booleans to return another boolean.
 
 Using double ampersands tells PHP to check if both values are true.

@@ -1,3 +1,11 @@
++++
+title = "Classes: Inheritance"
+description = "Extend your objects"
+tags = ["php", "extend", "inheritance"]
+slug = "classes-inheritance"
+previous = "classes.html"
+next = "classes-visibility.html"
++++
 In PHP, a class can extend another class, inheriting the parent class'
 properties and methods. To make a class a child of another, use the `extends`
 keyword after the class name.

@@ -1,3 +1,11 @@
++++
+title = "Static"
+description = "Class properties and methods"
+tags = ["php", "static"]
+slug = "static"
+previous = "classes-constructor.html"
+next = "interfaces.html"
++++
 When writing a class, all of the properties and methods are being defined for the object
 that will be created from the class.
 ```php
