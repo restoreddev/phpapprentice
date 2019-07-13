@@ -1,5 +1,5 @@
 +++
-title = "Abstract"
+title = "Abstract Classes"
 description = "Inheriting an interface"
 tags = ["php", "abstract"]
 slug = "abstract"
