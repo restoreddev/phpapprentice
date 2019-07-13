@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <div class="container center">
+        <a href="/" class="logo-404">{{ readFile "static/elephant.svg" | safeHTML }}</a>
+        <p class="message-404">Whoops! The page could not be found.</p>
+        <div class="toc-404">
+            {{ partial "table_of_contents.html" . }}
+        </div>
+    </div>
+{{ end }}

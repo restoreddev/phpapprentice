@@ -1,0 +1,4 @@
+baseURL = "https://phpapprentice.com/"
+languageCode = "en-us"
+title = "PHP Apprentice"
+uglyurls = true

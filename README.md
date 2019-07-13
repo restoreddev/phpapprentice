@@ -4,17 +4,7 @@ It is an online book that currently includes pages for learning the basics of PH
 PHP Apprentice is a work in progress so any constructive feedback is appreciated.
 
 ## Contributing
-The codebase is a static site generator. It takes the Markdown files in the `chapters` folder
-and builds them with PHP templates in `assets/templates`. All of the setup is controlled from the
-`config.php` file. In `config.php`, the different chapters are ordered and template variables are placed.
-To make a change to a chapter, just edit the Markdown file and merge with `master` and Travis will automatically
-build the page again. Any page additions need to be included in the `config.php` file.
-
-### Running Locally
-To develop locally, clone the repository and run `composer install` and `npm install` in your terminal.
-Then, you can run `php apprentice build` to build all the pages and `php apprentice server` to start a
-development server on `localhost:8080`. The development server automatically rebuilds pages on load,
-so you can use it to easily view changes. To build the JavaScript and CSS, run `npm run build` or `npm run watch`.
+PHP Apprentice is built with [Hugo](https://gohugo.io). To build the site locally, clone the repository, install Hugo and run `hugo server` with a terminal in the project root. All of the site pages are written in Markdown and stored in the content directory. To create a new page, the hugo generator will use the default template to generate the markdown file in the content folder: `hugo new test.md`.
 
 ## Roadmap
 Moving forward, there are three sections I would like to add to the site:

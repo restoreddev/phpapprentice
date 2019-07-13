@@ -1,0 +1,22 @@
++++
+title = "Installing PHP"
++++
+<div>
+    <h2>Windows 10</h2>
+    <ol class="body-ol">
+        <li>Download PHP from the <a href="https://windows.php.net/download">PHP For Windows</a> site. I recommend downloading the non-thread safe PHP 7.1 or 7.2 (unless you want to use Apache and you know if you do). You will also need to choose 32 bit (x86) or 64 bit (x64) depending on your version of Windows.</li>
+        <li>Download the corresponding Visual C++ Redistributable from the same site. For PHP 7.1, it is VC14 and for PHP 7.2, it is VC15.</li>
+        <li>Install the VC redistrubutable using the downloaded executable.</li>
+        <li>The PHP download comes in a zip folder. Extract the zip folder into your user directory in a folder named <code>php</code>. The path should look like <code>C:\Users\username\php</code>.</li>
+        <li>Next, we need to add PHP to your environment variables path. Open "System" under "Control Panel". Go to the "Advanced" tab and select "Environment Variables". In the "User variables" section, select "Path" and click the "Edit" button. You will see a list of different folder paths. Add the PHP path to the list using the "Add" button. The PHP path is the same folder where you extracted PHP.</li>
+        <li>Now, you can open PowerShell or Command Prompt and type <code>php -v</code> to verify PHP was installed correctly. It will return the installed version of PHP on your system.</li>
+    </ol>
+
+    <h2>MacOS</h2>
+    <p>Good news! Each version of MacOS comes with PHP by default. However, if you are running an older version of MacOS or OS X, then you will need to manually install a new version of PHP. To check your current version, open Terminal and type <code>php -v</code>. You will need at least PHP 7.1 on your computer to use all the features in these tutorials.</p>
+    <ol class="body-ol">
+        <li>Install <a href="https://brew.sh/">Homebrew</a>.</li>
+        <li>Run <code>brew install php</code> in Terminal.</li>
+        <li>Check your version is correct by running <code>php -v</code> in Terminal.</li>
+    </ol>
+</div>

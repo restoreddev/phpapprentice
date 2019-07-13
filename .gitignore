@@ -1,8 +1,5 @@
 .DS_Store
 
-/vendor
+/public
 /node_modules
-
-/docs
-/.build
-/.idea
+/resources
