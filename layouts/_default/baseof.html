@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}An online book for learning PHP{{ end }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ $css := resources.Get "site.css" }}
+    {{ $style := $css | resources.PostCSS }}
+    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+    <link rel="icon" href="/favicon-32.png">
+
+    {{ $prism := resources.Get "prism.js" }}
+    {{ $site := resources.Get "site.js"}}
+    {{ $js := slice $prism $site | resources.Concat "bundle.js" }}
+    <script src="{{ $js.Permalink }}"></script>
+</head>
+<body>
+  {{ block "main" . }}{{ end }}
+</body>
+</html>

@@ -1,3 +1,10 @@
++++
+title = "Basics"
+description = "Getting Started"
+tags = ["php", "basics"]
+slug = "basics"
+next = "variables.html"
++++
 If you want to follow along by writing code, start by downloading a code editor. I recommend
 [Visual Studio Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
 Next, create a new file in your editor called `basics.php` and save it anywhere on your computer, like a folder

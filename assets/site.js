@@ -1,8 +1,4 @@
-import Prism from 'prismjs';
-
 var onLoad = function () {
-    Prism.highlightAll();
-
     var menuButton = document.querySelector('.menu-button');
 
     // stop execution if menu button does not exist on page

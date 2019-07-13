@@ -1,0 +1,26 @@
+{{ define "main" }}
+    <div class="container small center">
+        {{ partial "menu_button.html" . }}
+
+        <h1>{{ .Title }}</h1>
+        <h3 class="subtitle">{{ .Description }}</h3>
+        {{ .Content }}
+
+        <div class="clearfix"></div>
+        <div class="navigate-links">
+            {{ if .Params.previous }}
+                <a href="/{{ .Params.previous }}" title="Previous" id="prev-link">
+                    <div class="icon">{{ readFile "static/cheveron-outline-left.svg" | safeHTML }}</div>
+                    Previous
+                </a>
+            {{ end }}
+            {{ if .Params.next }}
+                <a href="/{{ .Params.next }}" title="Next" id="next-link">
+                    Next
+                    <div class="icon">{{ readFile "static/cheveron-outline-right.svg" | safeHTML }}</div>
+                </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ partial "menu_modal.html" . }}
+{{ end }}

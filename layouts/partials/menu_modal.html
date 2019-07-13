@@ -1,0 +1,8 @@
+<div class="modal closed">
+    <div class="modal-content">
+        <button class="modal-button right" title="Close">
+            <div class="icon">{{ readFile "static/close-outline.svg" | safeHTML }}</div>
+        </button>
+        {{ partial "table_of_contents.html" . }}
+    </div>
+</div>
