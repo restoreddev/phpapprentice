@@ -79,7 +79,7 @@ $language = 'english';
 echo $language == 'spanish' ? "hola\n" : "hello\n";
 ```
 
-Lastly, there is another form of a ternary that checks if a value is set and then returns the value to the right of the two question marks if the value is null.
+Lastly, there is another form of a ternary that checks if a value is set and then returns the value to the right of the two question marks if the value is null. Otherwise, if the value is set it returns the content of the variable.
 ```php
 echo $IDoNotExist ?? "Variable not set\n";
 ```
