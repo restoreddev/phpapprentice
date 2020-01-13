@@ -18,12 +18,14 @@ button {
 code {
     background-color: #F0F0F0;
     font-family: Menlo, Monaco, "Cascadia Code", Consolas, "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
+    font-variant-ligatures: none;
     font-size: 14px !important;
     padding: 0.10em 0.25em;
 }
 pre, pre code {
     background-color: transparent;
     font-family: Menlo, Monaco, "Cascadia Code", Consolas, "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
+    font-variant-ligatures: none;
     font-size: 14px !important;
     margin: 0 !important;
     border-radius: 0 !important;
