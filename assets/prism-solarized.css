@@ -30,8 +30,8 @@ cyan      #2aa198
 green     #859900
 */
 
-code[class*="language-"],
-pre[class*="language-"] {
+.light-mode code[class*="language-"],
+.light-mode pre[class*="language-"] {
 	color: #657b83; /* base00 */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
@@ -53,101 +53,105 @@ pre[class*="language-"] {
 	hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+.light-mode pre[class*="language-"]::-moz-selection,
+.light-mode pre[class*="language-"] ::-moz-selection,
+.light-mode code[class*="language-"]::-moz-selection,
+.light-mode code[class*="language-"] ::-moz-selection {
 	background: #073642; /* base02 */
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+.light-mode pre[class*="language-"]::selection,
+.light-mode pre[class*="language-"] ::selection,
+.light-mode code[class*="language-"]::selection,
+.light-mode code[class*="language-"] ::selection {
 	background: #073642; /* base02 */
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+.light-mode pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
 	border-radius: 0.3em;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+.light-mode :not(pre) > code[class*="language-"],
+.light-mode pre[class*="language-"] {
 	background-color: #fdf6e3; /* base3 */
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+.light-mode :not(pre) > code[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.light-mode .token.comment,
+.light-mode .token.prolog,
+.light-mode .token.doctype,
+.light-mode .token.cdata {
 	color: #93a1a1; /* base1 */
 }
 
-.token.punctuation {
+.light-mode .token.punctuation {
 	color: #586e75; /* base01 */
 }
 
-.namespace {
+.light-mode .namespace {
 	opacity: .7;
 }
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
+.light-mode .token.property,
+.light-mode .token.tag,
+.light-mode .token.boolean,
+.light-mode .token.number,
+.light-mode .token.constant,
+.light-mode .token.symbol,
+.light-mode .token.deleted {
 	color: #268bd2; /* blue */
 }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.url,
-.token.inserted {
+.light-mode .token.selector,
+.light-mode .token.attr-name,
+.light-mode .token.string,
+.light-mode .token.char,
+.light-mode .token.builtin,
+.light-mode .token.url,
+.light-mode .token.inserted {
 	color: #2aa198; /* cyan */
 }
 
-.token.entity {
+.light-mode .token.entity {
 	color: #657b83; /* base00 */
 	background: #eee8d5; /* base2 */
 }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
+.light-mode .token.atrule,
+.light-mode .token.attr-value,
+.light-mode .token.keyword {
 	color: #859900; /* green */
 }
 
-.token.function,
-.token.class-name {
+.light-mode .token.function,
+.light-mode .token.class-name {
 	color: #b58900; /* yellow */
 }
 
-.token.regex,
-.token.important,
-.token.variable {
+.light-mode .token.regex,
+.light-mode .token.important,
+.light-mode .token.variable {
 	color: #cb4b16; /* orange */
 }
 
-.token.important,
-.token.bold {
+.light-mode .token.important,
+.light-mode .token.bold {
 	font-weight: bold;
 }
-.token.italic {
+.light-mode .token.italic {
 	font-style: italic;
 }
 
-.token.entity {
+.light-mode .token.entity {
 	cursor: help;
 }
 

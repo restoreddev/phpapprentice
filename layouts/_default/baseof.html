@@ -8,19 +8,19 @@
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}An online book for learning PHP{{ end }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{ $css := resources.Get "site.css" }}
+    {{ $css := resources.Get "styles.css" }}
     {{ $style := $css | resources.PostCSS }}
     {{ $secureCss := $style | resources.Fingerprint "sha512" }}
     <link rel="stylesheet" type="text/css" href="{{ $secureCss.Permalink }}" integrity="{{ $secureCss.Data.Integrity }}">
     <link rel="icon" href="/favicon-32.png">
-
-    {{ $prism := resources.Get "prism.js" }}
-    {{ $site := resources.Get "site.js"}}
-    {{ $js := slice $prism $site | resources.Concat "bundle.js" }}
-    {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 </head>
-<body>
+<body class="light-mode">
   {{ block "main" . }}{{ end }}
+
+  {{ $prism := resources.Get "prism.js" }}
+  {{ $site := resources.Get "site.js"}}
+  {{ $js := slice $prism $site | resources.Concat "bundle.js" }}
+  {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+  <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 </body>
 </html>

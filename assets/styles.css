@@ -1,10 +1,23 @@
-@import "assets/prism.css";
+@import "assets/prism-solarized.css";
+@import "assets/prism-tomorrow-night.css";
 
 $primary-color: #2AA198;
 $primary-color-dark: #1D6E68;
-$white: #FFF;
 $drop-shadow: rgba(0, 0, 0, 0.4);
-$code-background: #FDF6E3;
+$code-highlight: #EDEDED;
+$modal-background: #FFF;
+$button-text: #FFF;
+$hr-color: #EEE;
+
+$dark-background: #222;
+$dark-text-color: #CCC;
+$dark-primary-color: #cc99cd; /*#7ec699;*/
+$dark-primary-color-dark: #8C698C; /*#568769;*/
+$dark-button-text: #222;
+$dark-code-highlight: #111;
+$dark-modal-background: #222;
+$dark-drop-shadow: rgba(0, 0, 0, 0.6);
+$dark-hr-color: #CCC;
 
 body {
     font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
@@ -12,15 +25,22 @@ body {
     padding-top: 1em;
     padding-bottom: 1em;
 }
+body.dark-mode {
+    background-color: $dark-background;
+    color: $dark-text-color;
+}
 button {
     font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 code {
-    background-color: #F0F0F0;
+    background-color: $code-highlight;
     font-family: Menlo, Monaco, Consolas, "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
     font-variant-ligatures: none;
     font-size: 14px !important;
     padding: 0.10em 0.25em;
+}
+.dark-mode code {
+    background-color: $dark-code-highlight;
 }
 pre, pre code {
     background-color: transparent;
@@ -32,18 +52,27 @@ pre, pre code {
     padding: 0.5em 0 0.5em 0;
 }
 a {
-    color: $primary-color; /* #4078f2 */
+    color: $primary-color;
     text-decoration: none;
+}
+.dark-mode a {
+    color: $dark-primary-color;
 }
 a:hover {
     text-decoration: underline;
     color: $primary-color-dark;
 }
+.dark-mode a:hover {
+    color: $dark-primary-color-dark;
+}
 hr {
     border: 0;
     height: 1px;
-    background-color: #EEE;
+    background-color: $hr-color;
     margin: 0.5em 0;
+}
+.dark-mode hr {
+    background-color: $dark-hr-color;
 }
 p {
     line-height: 1.5;
@@ -74,8 +103,14 @@ button {
     padding: 0;
     color: $primary-color;
 }
+.dark-mode button {
+    color: $dark-primary-color;
+}
 button:hover {
     color: $primary-color-dark;
+}
+.dark-mode button:hover {
+    color: $dark-primary-color-dark;
 }
 button:focus {
     outline: 0;
@@ -86,26 +121,43 @@ button .icon {
 button .icon svg {
     fill: $primary-color;
 }
+.dark-mode button .icon svg {
+    fill: $dark-primary-color;
+}
 button:hover .icon svg {
     fill: $primary-color-dark;
 }
+.dark-mode button:hover .icon svg {
+    fill: $dark-primary-color-dark;
+}
 .button {
     background-color: $primary-color;
-    color: $white;
+    color: $button-text;
     padding: 0.5em 0.75em;
     border-radius: 2em;
     display: inline-block;
 }
+.dark-mode .button {
+    color: $dark-button-text;
+    background-color: $dark-primary-color;
+}
 .button:hover {
-    color: $white;
+    color: $button-text;
     background-color: $primary-color-dark;
     text-decoration: none;
+}
+.dark-mode .button:hover {
+    color: $dark-button-text;
+    background-color: $dark-primary-color-dark;
 }
 .button .icon {
     vertical-align: middle;
 }
 .button .icon svg {
-    fill: $white;
+    fill: $button-text;
+}
+.dark-mode .button .icon svg {
+    fill: $dark-button-text;
 }
 .clearfix:after {
     content: "";
@@ -142,19 +194,6 @@ button:hover .icon svg {
 .body-ol li {
     padding: 0.5em 0;
 }
-.grid-code {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-column-gap: 3em;
-}
-.grid-code .code {
-    background-color: $code-background;
-}
-.grid-toc {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 1em;
-}
 .navigate-links {
     margin: 1em 0;
     float: right;
@@ -165,8 +204,16 @@ button:hover .icon svg {
 .navigate-links .icon svg {
     fill: $primary-color;
 }
-.navigate-links:hover .icon svg {
+.dark-mode .navigate-links .icon svg {
+    fill: $dark-primary-color;
+}
+.prev-link:hover .icon svg,
+.next-link:hover .icon svg {
     fill: $primary-color-dark;
+}
+.dark-mode .prev-link:hover .icon svg,
+.dark-mode .next-link:hover .icon svg {
+    fill: $dark-primary-color-dark;
 }
 .navigate-links a {
     margin-left: 1em;
@@ -244,13 +291,16 @@ button:hover .icon svg {
     left: 0;
     z-index: 50;
     overflow: auto;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: $drop-shadow;
+}
+.dark-mode .modal {
+    background-color: $dark-drop-shadow;
 }
 .modal-content {
     display: block;
     position: relative;
     padding: 1em;
-    background-color: $white;
+    background-color: $modal-background;
     max-width: 20em;
     height: 100%;
     animation-name: animateleft;
@@ -258,6 +308,10 @@ button:hover .icon svg {
     overflow: auto;
     box-shadow: 0 0 10px 0 $drop-shadow;
     box-sizing: border-box;
+}
+.dark-mode .modal-content {
+    background-color: $dark-modal-background;
+    box-shadow: 0 0 10px 0 $dark-drop-shadow;
 }
 .modal-content .table-of-contents {
     padding: 2em;
