@@ -237,6 +237,10 @@ button:hover .icon svg {
     height: 1.25em;
     display: inline-block;
 }
+.dark-mode-form {
+    float: right;
+    padding-left: 1rem;
+}
 .home-title {
     text-align: center;
 }
@@ -266,7 +270,7 @@ button:hover .icon svg {
 }
 @media only screen and (max-width: 420px) {
     .home-buttons {
-        padding-top: 0.5em;
+        padding-top: 0.5rem;
         max-width: 15em;
         margin: 0 auto;
     }
@@ -275,13 +279,17 @@ button:hover .icon svg {
         display: block;
     }
     .home-buttons .menu {
-        margin-top: 0.5em;
+        margin-top: 0.5rem;
         text-align: center;
         display: block;
     }
+    .home-buttons .dark-mode-form {
+        float: none;
+        margin-top: 0.5rem;
+    }
 }
 .menu {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
 }
 .modal {
     position: fixed;
