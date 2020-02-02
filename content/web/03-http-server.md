@@ -4,6 +4,7 @@ description = "Handling HTTP Requests in PHP"
 tags = ["php", "http", "server"]
 slug = "http-server"
 previous = "web/http-post.html"
+next ="web/php-html.html"
 +++
 In PHP, you usually use a separate web server program that accepts HTTP requests and passes them to PHP to create a response. Common examples of separate web server programs are Apache and Nginx. However, PHP has a built in web server we can use during development.
 
