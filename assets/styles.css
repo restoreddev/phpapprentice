@@ -1,23 +1,21 @@
-@import "assets/prism-solarized.css";
-@import "assets/prism-tomorrow-night.css";
-
-$primary-color: #2AA198;
-$primary-color-dark: #1D6E68;
-$drop-shadow: rgba(0, 0, 0, 0.4);
-$code-highlight: #EDEDED;
-$modal-background: #FFF;
-$button-text: #FFF;
-$hr-color: #EEE;
-
-$dark-background: #222;
-$dark-text-color: #CCC;
-$dark-primary-color: #cc99cd; /*#7ec699;*/
-$dark-primary-color-dark: #8C698C; /*#568769;*/
-$dark-button-text: #222;
-$dark-code-highlight: #111;
-$dark-modal-background: #222;
-$dark-drop-shadow: rgba(0, 0, 0, 0.6);
-$dark-hr-color: #444;
+:root {
+    --primary-color: #2AA198;
+    --primary-color-dark: #1D6E68;
+    --drop-shadow: rgba(0, 0, 0, 0.4);
+    --code-highlight: #EDEDED;
+    --modal-background: #FFF;
+    --button-text: #FFF;
+    --hr-color: #EEE;
+    --dark-background: #222;
+    --dark-text-color: #CCC;
+    --dark-primary-color: #cc99cd; /*#7ec699;*/
+    --dark-primary-color-dark: #8C698C; /*#568769;*/
+    --dark-button-text: #222;
+    --dark-code-highlight: #111;
+    --dark-modal-background: #222;
+    --dark-drop-shadow: rgba(0, 0, 0, 0.6);
+    --dark-hr-color: #444;
+}
 
 body {
     font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
@@ -26,21 +24,21 @@ body {
     padding-bottom: 1em;
 }
 body.dark-mode {
-    background-color: $dark-background;
-    color: $dark-text-color;
+    background-color: var(--dark-background);
+    color: var(--dark-text-color);
 }
 button {
     font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 code {
-    background-color: $code-highlight;
+    background-color: var(--code-highlight);
     font-family: Menlo, Monaco, Consolas, "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
     font-variant-ligatures: none;
     font-size: 14px !important;
     padding: 0.10em 0.25em;
 }
 .dark-mode code {
-    background-color: $dark-code-highlight;
+    background-color: var(--dark-code-highlight);
 }
 pre, pre code {
     background-color: transparent;
@@ -52,27 +50,27 @@ pre, pre code {
     padding: 0.5em 0 0.5em 0;
 }
 a {
-    color: $primary-color;
+    color: var(--primary-color);
     text-decoration: none;
 }
 .dark-mode a {
-    color: $dark-primary-color;
+    color: var(--dark-primary-color);
 }
 a:hover {
     text-decoration: underline;
-    color: $primary-color-dark;
+    color: var(--primary-color-dark);
 }
 .dark-mode a:hover {
-    color: $dark-primary-color-dark;
+    color: var(--dark-primary-color-dark);
 }
 hr {
     border: 0;
     height: 1px;
-    background-color: $hr-color;
+    background-color: var(--hr-color);
     margin: 0.5em 0;
 }
 .dark-mode hr {
-    background-color: $dark-hr-color;
+    background-color: var(--dark-hr-color);
 }
 p {
     line-height: 1.5;
@@ -101,16 +99,16 @@ button {
     border: 0;
     cursor: pointer;
     padding: 0;
-    color: $primary-color;
+    color: var(--primary-color);
 }
 .dark-mode button {
-    color: $dark-primary-color;
+    color: var(--dark-primary-color);
 }
 button:hover {
-    color: $primary-color-dark;
+    color: var(--primary-color-dark);
 }
 .dark-mode button:hover {
-    color: $dark-primary-color-dark;
+    color: var(--dark-primary-color-dark);
 }
 button:focus {
     outline: 0;
@@ -119,45 +117,45 @@ button .icon {
     vertical-align: middle;
 }
 button .icon svg {
-    fill: $primary-color;
+    fill: var(--primary-color);
 }
 .dark-mode button .icon svg {
-    fill: $dark-primary-color;
+    fill: var(--dark-primary-color);
 }
 button:hover .icon svg {
-    fill: $primary-color-dark;
+    fill: var(--primary-color-dark);
 }
 .dark-mode button:hover .icon svg {
-    fill: $dark-primary-color-dark;
+    fill: var(--dark-primary-color-dark);
 }
 .button {
-    background-color: $primary-color;
-    color: $button-text;
+    background-color: var(--primary-color);
+    color: var(--button-text);
     padding: 0.5em 0.75em;
     border-radius: 2em;
     display: inline-block;
 }
 .dark-mode .button {
-    color: $dark-button-text;
-    background-color: $dark-primary-color;
+    color: var(--dark-button-text);
+    background-color: var(--dark-primary-color);
 }
 .button:hover {
-    color: $button-text;
-    background-color: $primary-color-dark;
+    color: var(--button-text);
+    background-color: var(--primary-color-dark);
     text-decoration: none;
 }
 .dark-mode .button:hover {
-    color: $dark-button-text;
-    background-color: $dark-primary-color-dark;
+    color: var(--dark-button-text);
+    background-color: var(--dark-primary-color-dark);
 }
 .button .icon {
     vertical-align: middle;
 }
 .button .icon svg {
-    fill: $button-text;
+    fill: var(--button-text);
 }
 .dark-mode .button .icon svg {
-    fill: $dark-button-text;
+    fill: var(--dark-button-text);
 }
 .clearfix:after {
     content: "";
@@ -202,18 +200,18 @@ button:hover .icon svg {
     vertical-align: middle;
 }
 .navigate-links .icon svg {
-    fill: $primary-color;
+    fill: var(--primary-color);
 }
 .dark-mode .navigate-links .icon svg {
-    fill: $dark-primary-color;
+    fill: var(--dark-primary-color);
 }
 .prev-link:hover .icon svg,
 .next-link:hover .icon svg {
-    fill: $primary-color-dark;
+    fill: var(--primary-color-dark);
 }
 .dark-mode .prev-link:hover .icon svg,
 .dark-mode .next-link:hover .icon svg {
-    fill: $dark-primary-color-dark;
+    fill: var(--dark-primary-color-dark);
 }
 .navigate-links a {
     margin-left: 1em;
@@ -299,27 +297,27 @@ button:hover .icon svg {
     left: 0;
     z-index: 50;
     overflow: auto;
-    background-color: $drop-shadow;
+    background-color: var(--drop-shadow);
 }
 .dark-mode .modal {
-    background-color: $dark-drop-shadow;
+    background-color: var(--dark-drop-shadow);
 }
 .modal-content {
     display: block;
     position: relative;
     padding: 1em;
-    background-color: $modal-background;
+    background-color: var(--modal-background);
     max-width: 20em;
     height: 100%;
     animation-name: animateleft;
     animation-duration: .4s;
     overflow: auto;
-    box-shadow: 0 0 10px 0 $drop-shadow;
+    box-shadow: 0 0 10px 0 var(--drop-shadow);
     box-sizing: border-box;
 }
 .dark-mode .modal-content {
-    background-color: $dark-modal-background;
-    box-shadow: 0 0 10px 0 $dark-drop-shadow;
+    background-color: var(--dark-modal-background);
+    box-shadow: 0 0 10px 0 var(--dark-drop-shadow);
 }
 .modal-content .table-of-contents {
     padding: 2em;

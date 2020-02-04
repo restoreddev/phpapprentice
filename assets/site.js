@@ -1,9 +1,5 @@
 // Dark mode
 var bodyTag = document.querySelector('body');
-if (localStorage.getItem('dark_mode') === 'true') {
-    bodyTag.className = 'dark-mode';
-}
-
 var darkMode = document.getElementById('dark_mode');
 if (localStorage.getItem('dark_mode') === 'true') {
     darkMode.checked = true;

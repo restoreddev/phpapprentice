@@ -8,19 +8,32 @@
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}An online book for learning PHP{{ end }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
+    {{ $prismSolarized := resources.Get "prism-solarized.css" }}
+    {{ $prismTomorrowNight := resources.Get "prism-tomorrow-night.css" }}
+    {{ $securePrismSolarized := $prismSolarized | resources.Fingerprint "sha512" }}
+    {{ $securePrismTomorrowNight := $prismTomorrowNight | resources.Fingerprint "sha512" }}
+
     {{ $css := resources.Get "styles.css" }}
     {{ $style := $css | resources.PostCSS }}
     {{ $secureCss := $style | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" type="text/css" href="{{ $securePrismSolarized.Permalink }}" integrity="{{ $securePrismSolarized.Data.Integrity }}">
+    <link rel="stylesheet" type="text/css" href="{{ $securePrismTomorrowNight.Permalink }}" integrity="{{ $securePrismTomorrowNight.Data.Integrity }}">
     <link rel="stylesheet" type="text/css" href="{{ $secureCss.Permalink }}" integrity="{{ $secureCss.Data.Integrity }}">
     <link rel="icon" href="/favicon-32.png">
 </head>
 <body class="light-mode">
-  {{ block "main" . }}{{ end }}
+    {{ $darkMode := resources.Get "dark-mode.js" }}
+    {{ $darkModeSecure := $darkMode | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $darkModeSecure.Permalink }}" integrity="{{ $darkModeSecure.Data.Integrity }}"></script>
 
-  {{ $prism := resources.Get "prism.js" }}
-  {{ $site := resources.Get "site.js"}}
-  {{ $js := slice $prism $site | resources.Concat "bundle.js" }}
-  {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-  <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+    {{ block "main" . }}{{ end }}
+
+    {{ $prism := resources.Get "prism.js" }}
+    {{ $site := resources.Get "site.js"}}
+    {{ $prismSecure := $prism | resources.Fingerprint "sha512" }}
+    {{ $siteSecure := $site | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $prismSecure.Permalink }}" integrity="{{ $prismSecure.Data.Integrity }}"></script>
+    <script type="text/javascript" src="{{ $siteSecure.Permalink }}" integrity="{{ $siteSecure.Data.Integrity }}"></script>
 </body>
 </html>
