@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "Bitstream Charter", "Caladea", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     font-size: 16px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -28,11 +28,11 @@ body.dark-mode {
     color: var(--dark-text-color);
 }
 button {
-    font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-family: Cambria, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "Bitstream Charter", "Caladea", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 code {
     background-color: var(--code-highlight);
-    font-family: Menlo, Monaco, Consolas, "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
+    font-family: Menlo, Monaco, Consolas, "Ubuntu Mono", "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
     font-variant-ligatures: none;
     font-size: 14px !important;
     padding: 0.10em 0.25em;
@@ -42,7 +42,7 @@ code {
 }
 pre, pre code {
     background-color: transparent;
-    font-family: Menlo, Monaco, Consolas, "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
+    font-family: Menlo, Monaco, Consolas, "Ubuntu Mono", "Noto Mono", "Liberation Mono", "Courier New", monospace !important;
     font-variant-ligatures: none;
     font-size: 14px !important;
     margin: 0 !important;
