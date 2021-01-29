@@ -4,7 +4,7 @@ It is an online book that currently includes pages for learning the basics of PH
 PHP Apprentice is a work in progress so any constructive feedback is appreciated.
 
 ## Contributing
-PHP Apprentice is built with [Hugo](https://gohugo.io). To build the site locally, clone the repository, install Hugo and run `hugo server` with a terminal in the project root. All of the site pages are written in Markdown and stored in the content directory. To create a new page, the hugo generator will use the default template to generate the markdown file in the content folder: `hugo new test.md`.
+PHP Apprentice is built with [Hugo](https://gohugo.io). To build the site locally, clone the repository, install Hugo, run `npm install` and `hugo server` with a terminal in the project root. All of the site pages are written in Markdown and stored in the content directory. To create a new page, the hugo generator will use the default template to generate the markdown file in the content folder: `hugo new test.md`.
 
 ## Roadmap
 Moving forward, there are three sections I would like to add to the site:
